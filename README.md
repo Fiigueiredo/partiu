@@ -1,24 +1,30 @@
 # agencia-viagens
+<div align="center">
+<img align="center" src="/img/logo/logo-tm2.png" alt="">
+  <br>"Todos tem seu par, junte-se a nós e partiu"
+</div>
 
-<img src="/img/logo/logotipo.png" alt="">
+<br>
 
 ## Índice
 
-- [Sobre o projeto](#sobre)
-- [Tech](#tecnologias)
-- [Screenshots](#screenshots)
-- [Updates](#update)
+* [Sobre o projeto](#upon)
+* [Tech](#technologies)
+* [Screenshots](#screenshots)
+* [Updates](#update)
+
 <br>
 
-## Sobre
+## Upon
 "Uma agência de viagens precisa de você para desenvolver uma série de módulos para organizar as informações dos seus clientes, apresentar seus serviços e melhorar os serviços oferecidos aos seus parceiros."
+
 <br>
 
-## 💻 Tecnologias
+## 💻 Technologies
 Nesta atividade, vamos usar os conceitos de algoritmos em pseudocódigo (Resolução de problemas usando portugol), HTML, CSS e BOOTSTRAP para a construção de um modelo de agência de viagens.
 
-- <div><em>Usando Pseudocódigo</em>: <img width="500px" src="/img/icons/portugol.png">
-  Usando conceitos de programação estruturada, crie em pseudocódigo um menu para simular um cadastro para uma agência de viagens com as seguintes funções:</div>
+- <em>Usando Pseudocódigo</em>:  <img width="15px" src="/img/icons/portugol.png"><br>
+Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' para simular um cadastro para uma agência de viagens com as seguintes funções:</div>
   
   - cadastro de cliente;
   - cadastro de destino;
@@ -26,20 +32,22 @@ Nesta atividade, vamos usar os conceitos de algoritmos em pseudocódigo (Resolu�
   - consulta de destino;
 <br>
 
-- <em>Usando WEB</em>: <img width="500px" src="/img/icons/html-js-css.png">
+- <em>Usando WEB</em>: <img width="50px" src="/img/icons/html-js-css.png">
   - Criar as página: Home;
   - Criar as página: Destino;
   - Criar as página: Promoções;
   - Criar as página: Contato;
   - As páginas devem ser responsivas ou adaptáveis;
   - Faça as formatações de acordo com a paleta de cores escolhida;
+
 <br>
 
 ## Screenshots
 <img width="500px" src="#" alt="no screenshots at the moment">
+
 <br>
 
 ## Update
 
-[ ] Criar um protótipo da primeira versão do site;<br>
+- [ ] Criar um protótipo da primeira versão do site;<br>
 Sorry, so far we have no versions

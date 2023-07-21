@@ -1,0 +1,45 @@
+body {
+  background-color: #222626;
+  color: #F21667;
+}
+
+.background > img {
+  width: 100%;
+  height: auto;
+}
+
+/* .paleta-cores {
+  color: #ED3E44;
+  color: #070750;
+  color: #238ED6;
+  color: #79BD8F;
+  color: #FBCC54;
+  color: #050505;
+  color: #222626;
+  color: #4f4f4f;
+  color: #E9145A;
+  color: #F21667;
+  color: #A68A56;
+}
+
+body {
+  background-color: #272527;
+  padding: 5%;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.container {
+  column-count: 5;
+  column-gap: 10px;
+} */

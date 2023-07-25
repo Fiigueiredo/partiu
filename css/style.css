@@ -1,45 +1,88 @@
-body {
-  background-color: #222626;
-  color: #F21667;
+@import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
+@import url(/css/img.css);
+
+:root {
+  /* cores */
+  --fundo0: #000000;
+  --fundo1: #292929;
+  --fundo2: #515151;
+  --fundo3: #7a7a7a;
+  --fundo4: #a2a2a2;
+  --color0: #fbcb54;
+  --color1: #fbbc54;
+  --color2: #7dbb8c;
+  --color3: #79bd8f;
+  --color4: #070750;
+  --color5: #238ED6;
+  --color6: #ed145b;
+  --color7: #f21667;
+  --color8: #ED3E44;
+
+  --color-special-day: rgba(29, 29, 100, 0.6);
+  --color-padrao: rgb;
+  --bg-menu: #a2a2a2;
+  --font-padrao: "Gotham HTF Light", sans-serif;
+
+  /* logo */
+  --hlogo: 40px;
+  --wlogo: 85px;
+  --hover-logo: rgba(209, 219, 11, 0.733);
+
+  /* botão logo */
+  --hbotao-logo: 35px;
+  --wbotao-logo: 35px;
+  --hover-botao: rgba(195, 19, 19, 0.708);
+
+  /* margin e padding */
+  --mpadrao: 5px;
+  --ppadrao: 5px;
 }
 
-.background > img {
-  width: 100%;
-  height: auto;
-}
-
-/* .paleta-cores {
-  color: #ED3E44;
-  color: #070750;
-  color: #238ED6;
-  color: #79BD8F;
-  color: #FBCC54;
-  color: #050505;
-  color: #222626;
-  color: #4f4f4f;
-  color: #E9145A;
-  color: #F21667;
-  color: #A68A56;
-}
-
-body {
-  background-color: #272527;
-  padding: 5%;
-}
-
-img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-figure {
+* {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-family: var(--font-padrao);
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  display: flex;
-  margin-bottom: 10px;
-  break-inside: avoid;
+}
+.special-day{
+  background-color: var(--color-special-day);
 }
 
-.container {
-  column-count: 5;
-  column-gap: 10px;
-} */
+.esse {
+  border: 1px solid red;
+}
+
+.card-recent-trip {
+  border-radius: 5px;
+  max-width: 10vh;
+  max-height: 9vh;
+  margin: 0.5vh;
+}
+
+.bg-teste {
+  /* background-image: url(/img/teste.jpg); */
+  background-color: var(--fundo4);
+}
+
+strong {
+  color: var(--color-padrao);
+}
+
+strong:hover {
+  text-transform: uppercase;
+}
+
+.zoom {
+  transition: transform .5s; /* Animation */
+
+}
+.zoom:hover {
+  text-transform: uppercase;
+  transform: scale(1.1);
+  /* (150% zoom) */
+}
+
+a:hover {
+  text-decoration: none;
+}

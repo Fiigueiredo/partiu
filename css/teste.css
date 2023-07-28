@@ -1,39 +1,3 @@
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-  #introCarousel {
-    margin-top: -58.59px;
-  }
-}
-
-figure {
-  margin: 0;
-  display: flex;
-  margin-bottom: 10px;
-  break-inside: avoid;
-}
-
-.carousel-item.active {
-  height: 100vh;
-}
-
-.carousel-item {
-  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-  background-size: cover;
-  background-position: center center;
-}
-
-.navbar .nav-link {
-  color: #fff !important;
-}
-
-button:hover {
-  filter: drop-shadow(0px 2px 3px rgba(195, 19, 19, 0.708));
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +11,9 @@ button:hover {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 7vh 83vh 10vh;
   grid-template-areas:
-  "header header"
+    "header header"
     "main aside"
-  "footer footer";
+    "footer footer";
 }
 
 header {
@@ -70,4 +34,69 @@ aside {
 footer {
   background: red;
   grid-area: footer;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+button:hover {
+  filter: drop-shadow(0px 2px 3px rgba(195, 19, 19, 0.708));
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.carousel-item.active {
+  height: 100vh;
+}
+
+.background {
+  background-image: url('https://');
+  background-size: cover;
+  background-position: center center;
+}
+
+.teste {
+  --woocommerce: #a46497;
+  --wc-green: #7ad03a;
+  --wc-red: #a00;
+  --wc-orange: #ffba00;
+  --wc-blue: #2ea2cc;
+  --wc-primary: #a46497;
+  --wc-primary-text: white;
+  --wc-secondary: #ebe9eb;
+  --wc-secondary-text: #515151;
+  --wc-highlight: #77a464;
+  --wc-highligh-text: white;
+  --wc-content-bg: #fff;
+  --wc-subtext: #767676;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: .6em 1.5em .6em 1.5em;
+  background: #222;
+  text-shadow: none;
+  -webkit-appearance: none;
+  box-shadow: 0 0 0 0;
+  line-height: 1.5 !important;
+  border-radius: 5px;
+  font-style: normal;
+  transition: color .2s linear, background .1s linear, opacity .2s linear;
+  font-size: 15px;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  background-color: #FF4A52;
+  color: #ffffff;
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
 }

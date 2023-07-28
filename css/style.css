@@ -3,11 +3,10 @@
 
 :root {
   /* cores */
-  --fundo0: #000000;
-  --fundo1: #292929;
-  --fundo2: #515151;
-  --fundo3: #7a7a7a;
-  --fundo4: #a2a2a2;
+  --fundo0: #292929;
+  --fundo1: #515151;
+  --fundo2: #7a7a7a;
+  --fundo3: #a2a2a2;
   --color0: #fbcb54;
   --color1: #fbbc54;
   --color2: #7dbb8c;
@@ -18,71 +17,189 @@
   --color7: #f21667;
   --color8: #ED3E44;
 
-  --color-special-day: rgba(29, 29, 100, 0.6);
-  --color-padrao: rgb;
-  --bg-menu: #a2a2a2;
-  --font-padrao: "Gotham HTF Light", sans-serif;
+  /* Cores do HOVER */
+  --: rgba(209, 219, 11, 0.733);
+  --color-highlight0: rgba(195, 19, 19, 0.708);
+  --color-highlight1: #BF681B;
+  --color-button0: #F2AE2E;
+  --color-text: #2f2c42;
+  --color-subtitle: #592202;
 
-  /* logo */
-  --hlogo: 40px;
-  --wlogo: 85px;
-  --hover-logo: rgba(209, 219, 11, 0.733);
-
-  /* botão logo */
-  --hbotao-logo: 35px;
-  --wbotao-logo: 35px;
-  --hover-botao: rgba(195, 19, 19, 0.708);
-
-  /* margin e padding */
-  --mpadrao: 5px;
-  --ppadrao: 5px;
+  /* Dia Especial */
+  --specialBackground: #79bd8f;
+  --shadow-logo: #592202;
+  --specialColor: rgba(29, 29, 100, 0.6);
+  --specialFont: "Gotham HTF Light", sans-serif;
 }
 
-* {
+/* * {
   font-family: monospace, Arial, Helvetica, sans-serif;
-  font-family: var(--font-padrao);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-.special-day{
-  background-color: var(--color-special-day);
+} */
+
+body {
+  font-family: var(--specialFont);
+  background: url(/img/outras/01.webp) no-repeat fixed center;
+  color: var(--specialBackground);
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.esse {
-  border: 1px solid red;
+/* NAVBAR */
+.logo-navbar {
+  max-width: 80px;
+  filter: drop-shadow(20px 10px 4px var(--shadow-logo));
 }
 
-.card-recent-trip {
-  border-radius: 5px;
-  max-width: 10vh;
-  max-height: 9vh;
-  margin: 0.5vh;
+.logo-toggler {
+  max-width: 35px;
 }
 
-.bg-teste {
-  /* background-image: url(/img/teste.jpg); */
-  background-color: var(--fundo4);
+.background-toggler,
+.background-dropdown {
+  background-color: var(--specialBackground);
 }
 
-strong {
-  color: var(--color-padrao);
-}
-
-strong:hover {
-  text-transform: uppercase;
+.background-dropdown:hover {
+  filter: drop-shadow(3px 3px 3px var(--shadow-logo));
 }
 
 .zoom {
-  transition: transform .5s; /* Animation */
-
+  transition: transform 0.5s;
 }
+
 .zoom:hover {
   text-transform: uppercase;
   transform: scale(1.1);
-  /* (150% zoom) */
 }
 
-a:hover {
+
+
+
+
+
+
+/* .search-home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  background-color: var();
+  border-radius: 15px;
+  padding: 25px;
+  opacity: 0.9;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-form {
+  background-color: #238ED6;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 12px;
+  opacity: 0.9;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#locations,
+#hotel,
+#range {
+  display: flex;
+  flex-direction: column;
+} */
+
+
+
+
+/* footer */
+#logo-footer {
+  max-width: 50px;
+  filter: drop-shadow(5px 6px 5px var());
+}
+
+#footer-menu,
+#footer-copyright {
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
+}
+
+#card-recent-trip {
+  border-radius: 5px;
+  max-width: 80px;
+  margin: 5px;
+}
+
+#card-recent-trip:hover {
+  filter: drop-shadow(0px 3px 5px var());
+}
+
+#methods-payment {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------Área de testes---------------*/
+/*
+button {
+  --wc-green: #7ad03a;
+  --wc-blue: #1ec6b6;
+  padding: .6em 1.5em .6em 1.5em;
+}
+
+.btn-danger:hover {
+  background-color: var(--wc-blue);
+}
+
+span {
+  color: var(--color-padrao);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+a,
+li :hover {
+  text-decoration: none;
+}
+
+
+
+ */
+
+
+
+.esse {
+  border: 1px solid red;
 }

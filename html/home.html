@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Framework Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <!-- Biblioteca JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
-    <!-- Fonte -->
-    <link href="https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light"
-        rel="stylesheet">
 
     <!-- CSS Externo -->
     <link rel="stylesheet" href="/css/style.css">
@@ -28,20 +24,22 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header class="navbar navbar-expand-lg bd-navbar sticky-top">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+
             <!-- Botão Mobile (Lado Esquerdo) -->
             <div class="bd-navbar-toggle">
-                <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                    aria-controls="bdSidebar" aria-label="Toggle navigation">
 
-                        <img class="logo-mobile-buttom" src="/img/logo/logomarca1.png" fill="currentColor">
-                    </button> -->
+                    <img class="logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                </button> -->
             </div>
 
-            <!-- Botão Logo Principal -->
+            <!-- Logo navbar -->
             <a class="navbar-brand p-0 m-0 me-lg-5" href="/html/home.html" aria-label="Partiu">
-                <img class="d-block" src="/img/logo/logo4.png" id="logo">
+                <img class="logo-navbar d-block" src="/img/logo/logo-tm4.png" alt="Partiu">
 
                 <title>Partiu</title>
             </a>
@@ -51,26 +49,26 @@
                 <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
                     aria-controls="bdNavbar" aria-label="Toggle navigation">
 
-                    <img class="logo-mobile-buttom" src="/img/logo/logomarca1.png" fill="currentColor">
+                    <img class="logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
                 </button>
             </div>
 
             <!-- Menu mobile-->
-            <div class="bg-mobile-menu offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+            <div class="background-toggler offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
                 aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
 
-                <!-- Cabeçalho do menu mobile -->
+                <!-- Cabeçalho -->
                 <div class="offcanvas-header p-4">
                     <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
-                        Partiu?
+                        <span>Partiu?</span>
                     </h5>
 
                     <!-- Botão Fechar Menu Mobile -->
-                    <button class="strong btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
                         aria-label="Close" data-bs-target="#bdNavbar"></button>
                 </div>
 
-                <!-- Opções da navbar -->
+                <!-- Menu -->
                 <div class="offcanvas-body p-4 pt-0 p-lg-0">
 
                     <hr class="d-lg-none text-white-50">
@@ -80,59 +78,37 @@
 
                         <!-- Home -->
                         <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link active" aria-current="true" href="/html/home.html"
-                                onclick="ga('send', 'event', 'Navbar', 'Community links', 'Home');">Home</a>
+                            <a class="nav-link active" aria-current="true" href="/html/home.html">Home</a>
                         </li>
 
                         <!-- Destinations -->
                         <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link" href="/html/destinations.html"
-                                onclick="ga('send', 'event', 'Navbar', 'Community links', 'Destinations');"
-                                rel="noopener">Destinos</a>
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
                         </li>
 
-                        <!-- Packages -->
+                        <!-- Packages/Promotions -->
                         <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link" href="/html/packages.html"
-                                onclick="ga('send', 'event', 'Navbar', 'Community links', 'Packages');"
-                                rel="noopener">Pacotes</a>
+                            <a class="nav-link" href="/html/promotions.html">Pacotes</a>
                         </li>
 
-                        <!-- Outras opções internas de menu -->
-                        <li class="nav-item dropdown">
+                        <!-- Dropdown menu -->
+                        <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Mais
                             </a>
 
-                            <ul class="bg-menu dropdown-menu py-2 px-3 py-lg-2 px-lg-2">
-
-                                <!-- About us -->
-                                <li class="zoom nav-item col-6 col-lg-auto">
-                                    <a class="nav-link" href="/html/about.html"
-                                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'About us');">Sobre</a>
-                                </li>
+                            <ul class="background-dropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2"> <!-- About us -->
+                                <li class="zoom"><a class="nav-link" href="/html/about.html">Sobre</a></li>
 
                                 <!-- Cadastre -->
-                                <li class="zoom nav-item col-6 col-lg-auto">
-                                    <a class="nav-link" href="/html/cadastre.html"
-                                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Cadastre');"
-                                        rel="noopener">Cadastro</a>
-                                </li>
+                                <li class="zoom"><a class="nav-link" href="/html/cadastre.html">Cadastro</a></li>
 
                                 <!-- Contact us -->
-                                <li class="zoom nav-item col-6 col-lg-auto">
-                                    <a class="nav-link" href="/html/contact.html"
-                                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Contact');"
-                                        rel="noopener">Contato</a>
-                                </li>
+                                <li class="zoom"><a class="nav-link" href="/html/contact.html">Contato</a></li>
 
                                 <!-- FAQs -->
-                                <li class="zoom nav-item col-6 col-lg-auto">
-                                    <a class="nav-link" href="/html/faq.html"
-                                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'FAQ');"
-                                        rel="noopener">FAQ</a>
-                                </li>
+                                <li class="zoom"><a class="nav-link" href="/html/faq.html">FAQ</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -146,7 +122,7 @@
                         <li class="zoom nav-item col-6 col-lg-auto">
                             <a class="nav-link" href="https://github.com/Fiigueiredo" target="_blank" rel="noopener">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                <svg xmlns="" width="16" height="16" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
 
                                     <title>Github</title>
@@ -162,7 +138,7 @@
                             <a class="nav-link" href="https://www.linkedin.com/in/levifiigueiredo/" target="_blank"
                                 rel="noopener">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                <svg xmlns="" width="16" height="16" fill="currentColor"
                                     class="bi bi-linkedin" viewBox="0 0 16 16">
 
                                     <title>Linkedin</title>
@@ -185,46 +161,171 @@
     </header>
 
     <!-- Seção Principal -->
-    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
-        <main>
+    <main>
+        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+            <!-- Título da mensagem principal -->
+            <div class="container">
+                <div class="message">
+                    <h2>"Todos tem seu par, junte-se a nós e <span>partiu</span>"</h2>
 
-        </main>
-    </div>
+                    <!-- Subtítulo da mensagem principal -->
+                    <p>Viagens, experiências e lugares. Tudo em um único serviço.</p>
+                </div>
+
+                <!-- Formulário de pesquisa -->
+                <div class="search-form">
+                    <form class="" action="">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+                            <!-- Insira o nome de destino -->
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Destination, city"
+                                    aria-label="City">
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <!-- Selecione o mês -->
+                            <div class="col-12">
+                                <select class="form-select">
+                                    <option selected>Qualquer Mês</option>
+                                    <option value="january">Janeiro</option>
+                                    <option value="february">Fevereiro</option>
+                                    <option value="march">Março</option>
+                                    <option value="april">Abril</option>
+                                    <option value="may">Maio</option>
+                                    <option value="june">Junho</option>
+                                    <option value="july">Julho</option>
+                                    <option value="august">Agosto</option>
+                                    <option value="september">Setembro</option>
+                                    <option value="october">Outubro</option>
+                                    <option value="november">Novembro</option>
+                                    <option value="december">Dezembro</option>
+                                </select>
+                                <span class="ti-calendar"></span>
+                            </div>
+
+                            <!-- Selecione a Ordem de pesquisa -->
+                            <div class="col-12">
+                                <select class="form-select">
+                                    <option selected="most-relevant">Mais relevante</option>
+                                    <option value="price-low">Menor preço</option>
+                                    <option value="price-high">Maior preço</option>
+                                    <option value="name">Nome</option>
+                                    <option value="popular">Popularidade</option>
+                                    <option value="review">Pontuação</option>
+                                </select>
+                                <span class="ti-exchange-vertical"></span>
+                            </div>
+
+                            <!-- Botão de Pesquisa -->
+                            <div class="col-12">
+                                <button class="btn btn-danger col-12" type="button">
+                                    Procurar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Pesquisa avançada -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pesquisa Avançada
+                    </a>
+
+                    <ul class="search-advanced dropdown-menu">
+                        <li><!-- Lista de categorias -->
+                            <div class="dropdown-item">
+                                <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected>Todas as Categorias</option>
+                                    <option value="mountain">Montanha</option>
+                                    <option value="rural">Rural</option>
+                                    <option value="snow-ice">Gelo &amp; Neve</option>
+                                    <option value="wildlife">Vida selvagem</option>
+                                </select>
+                                <span class="ti-angle-down"></span>
+                            </div>
+                        </li>
+
+                        <li><!-- Lista de destinos -->
+                            <div class="select-destination dropdown-item">
+                                <select class="form-select form-select-sm" aria-label="Small select example">
+
+                                    <option selected>Qualquer destino</option>
+                                    <option value="277">Tokyo</option>
+                                    <option value="278">Seoul</option>
+                                    <option value="279">Paris</option>
+                                    <option value="284">London</option>
+                                    <option value="285">Venice</option>
+                                    <option value="287">Miami</option>
+                                    <option value="289">Rome</option>
+                                    <option value="270">Prague</option>
+                                    <option value="291">California</option>
+                                    <option value="292">Kyoto</option>
+                                    <option value="293">Hong Kong</option>
+                                    <option value="294">Santorini</option>
+                                </select>
+                                <span class="ti-angle-down"></span>
+                            </div>
+                        </li>
+
+                        <li><!-- Inserir preço -->
+                            <div class="insert-price  dropdown-item dropdown-item">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Seção Rodapé -->
-    <footer class="special-day py-0 py-md-0 mt-5">
-        <div class="container py-4 py-md-5 px-4 px-md-0 text-body-secondary">
+    <footer class="special-day py-2 py-md-2 px-2 px-md-2 mt-5">
+        <div class="container py-4 py-md-4 px-4 px-md-3">
 
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <!-- Footer top - Informações da agencia -->
+            <div class="row">
+                <!-- About -->
+                <div class="col-lg-3">
 
-                <!-- 1ª coluna -->
-                <div class="col-lg-3 mb-3 p-3">
-                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                    <a class="d-inline-flex align-items-center text-body-emphasis"
                         href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank" rel="Github noopener"
                         aria-label="Partiu">
-                        <img class="d-block" src="/img/logo/logo-tm1.png" id="logo">
-                        <span class="fs-5">Partiu</span>
+                        <img id="logo-footer" class="d-block" src="/img/logo/logomarca1.png">
+
+                        <strong class="fs-5">
+                            Partiu
+                        </strong>
                     </a>
 
                     <ul class="list-unstyled small">
-                        <li class="mb-2">Projetado e construído com todo o amor do mundo por <a
-                                href="https://github.com/Fiigueiredo" target="_blank" rel="Developer noopener">Levi
-                                Figueiredo</a> com a ajuda da <a href="https://recodepro.org.br/" target="_blank"
-                                rel="Support noopener">Recode PRO 2023</a>.
+                        <li class="mb-2">Projetado e construído com todo o amor do mundo por
+                            <a href="https://github.com/Fiigueiredo" target="_blank" rel="Developer noopener">
+                                Levi Figueiredo</a>, com a ajuda da
+
+                            <a href="https://recodepro.org.br/" target="_blank" rel="Support noopener">
+                                Recode PRO 2023</a>.
                         </li>
 
-                        <li class="mb-2">Código licenciado <a
-                                href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE" target="_blank"
-                                rel="license noopener">MIT</a>.</li>
+                        <li class="mb-2">Código licenciado
+                            <a href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE" target="_blank"
+                                rel="license noopener">MIT
+                            </a>.
+                        </li>
                         <li class="mb-2">Atualmente v1.0.3.</li>
                     </ul>
                 </div>
 
-
-                <!-- 2ª coluna -->
-                <div class="col-6 col-lg-2 offset-lg-1 mb-3 p-3">
-
+                <!-- Contact us -->
+                <div class="col-6 col-lg-2 offset-lg-1">
                     <h5>Contact us</h5>
+
                     <ul class="list-unstyled small">
                         <p>
                             <span>21-2345-6789</span>
@@ -238,90 +339,150 @@
                     </ul>
                 </div>
 
+                <!-- Methods Payment -->
+                <div class="col-6 col-lg-2 ">
+                    <h5>Methods Payment</h5>
 
-                <!-- 3ª coluna -->
-                <div class="col-6 col-lg-4 offset-lg-1 mb-3 p-3">
+                    <div class="row">
+
+                        <!-- metodo 01 -->
+                        <img src="/img/payment methods/visa.png" alt="Visa" id="methods-payment">
+                        </a>
+
+                        <!-- metodo 02 -->
+                        <img src="/img/payment methods/mastercard.png" alt="Mastercard" id="methods-payment">
+                        </a>
+
+                        <!-- metodo 03 -->
+                        <img src="/img/payment methods/american-express.png" alt="American Express"
+                            id="methods-payment">
+                        </a>
+
+                        <!-- metodo 04 -->
+                        <img src="/img/payment methods/hipercard.png" alt="Hipercard" id="methods-payment">
+                        </a>
+
+                        <!-- metodo 05 -->
+                        <img src="/img/payment methods/pix.png" alt="Pix" id="methods-payment">
+                        </a>
+
+                        <!-- metodo 06 -->
+                        <img src="/img/payment methods/paypal.png" alt="PayPal" id="methods-payment">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Recent Trips -->
+                <div class="col-lg-4 ">
                     <h5>Recent Trips</h5>
 
-                    <ul class="list-unstyled">
+                    <div class="row row-cols-3 row-cols-sm-4 row-cols-md-4">
+                        <!-- card-recent-trip 01 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27138570412/">
+                            <img src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
+                                alt="Rio De Janeiro" id="card-recent-trip">
+                        </a>
 
-                        <!-- Cartões de viagens recentes -->
-                        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 row-cols-xl-5">
+                        <!-- card-recent-trip 02 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/28760131762/">
+                            <img src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg" alt="Buda"
+                                id="card-recent-trip">
+                        </a>
 
-                            <!-- card-recent-trip 01 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/27138570412/">
-                                        <img src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
-                                            alt="Rio De Janeiro" class="card-recent-trip">
-                                    </a>
-                                </li>
-                            </div>
+                        <!-- card-recent-trip 03 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27308262031/">
+                            <img src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg" alt="Pinguins"
+                                id="card-recent-trip">
+                        </a>
 
-                            <!-- card-recent-trip 02 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/28760131762/">
-                                        <img src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg"
-                                            alt="Buda" class="card-recent-trip">
-                                    </a>
-                                </li>
-                            </div>
+                        <!-- card-recent-trip 05 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27287965356/">
+                            <img src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg" alt="Singapura"
+                                id="card-recent-trip">
+                        </a>
 
-                            <!-- card-recent-trip 03 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/27308262031/">
-                                        <img src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg"
-                                            alt="Pinguins" class="card-recent-trip">
-                                    </a>
+                        <!-- card-recent-trip 05 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/26520497604/">
+                            <img src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg" alt="Paris"
+                                id="card-recent-trip">
+                        </a>
 
-                                </li>
-                            </div>
+                        <!-- card-recent-trip 06 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27012097142/">
+                            <img src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
+                                alt="The Great Gate" id="card-recent-trip">
+                        </a>
+                    </div>
+                </div>
 
-                            <!-- card-recent-trip 05 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/27287965356/">
-                                        <img src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg"
-                                            alt="Singapura" class="card-recent-trip">
-                                    </a>
-                                </li>
-                            </div>
+                <!-- Footer Menu-->
+                <div class="small">
+                    <ul class="nav" id="footer-menu">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/html/home.html">Home</a>
+                        </li>
 
-                            <!-- card-recent-trip 05 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/26520497604/">
-                                        <img src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg"
-                                            alt="Paris" class="card-recent-trip">
-                                    </a>
-                                </li>
-                            </div>
+                        <!-- Destinos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        </li>
 
-                            <!-- card-recent-trip 06 -->
-                            <div class="col zoom">
-                                <li>
-                                    <a target="_blank"
-                                        href="https://www.flickr.com/photos/artiephotography/27012097142/">
-                                        <img src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
-                                            alt="The Great Gate" class="card-recent-trip">
-                                    </a>
-                                </li>
-                            </div>
-                        </div>
+                        <!-- Promoções -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/promotions.html">Promoções</a>
+                        </li>
 
+                        <!-- Contato -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contact.html">Contatos</a>
+                        </li>
+
+                        <!-- Item desativado -->
+                        <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Outro ITEM</a>
+                    </li> -->
                     </ul>
                 </div>
 
+                <!-- Copyright -->
+                <div class="small" id="footer-copyright">
+                    <p>Copyright &copy; 2023 <span>Partiu™ Agency Trip</span> ⇆ Todos direitos
+                        reservados.</span>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 </body>
 
 </html>
+
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Mais
+    </a>
+
+    <ul class="dropdown-menu dropdown-menu-dark">
+        <!-- About us -->
+        <li><a class="zoom dropdown-item" href="/html/about.html">Sobre</a></li>
+
+        <!-- Cadastre -->
+        <li><a class="zoom dropdown-item" href="/html/cadastre.html">Cadastro</a></li>
+
+        <!-- Contact us -->
+        <li><a class="zoom dropdown-item" href="/html/contact.html">Contato</a></li>
+
+        <!-- FAQs -->
+        <li><a class="zoom dropdown-item" href="/html/faq.html">FAQ</a></li>
+    </ul>
+</li>

@@ -26,30 +26,32 @@
 <body>
     <!-- Cabeçalho -->
     <header class="navbar navbar-expand-lg bd-navbar sticky-top">
-        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
 
-            <!-- Botão Mobile (Lado Esquerdo) -->
+            <!-- Navbar toggle Esquerdo) -->
             <div class="bd-navbar-toggle">
                 <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
                     aria-controls="bdSidebar" aria-label="Toggle navigation">
 
-                    <img class="logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
                 </button> -->
             </div>
 
             <!-- Logo navbar -->
-            <a class="navbar-brand p-0 m-0 me-lg-5" href="/html/home.html" aria-label="Partiu">
+            <a class="navbar-brand p-0 me-0 me-lg-2" href="/html/home.html" aria-label="Partiu">
                 <img class="logo-navbar d-block" src="/img/logo/logo-tm4.png" alt="Partiu">
 
                 <title>Partiu</title>
             </a>
 
-            <!-- Botão Mobile (Lado Direito) -->
-            <div class="bd-navbar-toggle">
-                <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
-                    aria-controls="bdNavbar" aria-label="Toggle navigation">
 
-                    <img class="logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+            <!-- Navbar toggle Direito) -->
+            <div class="d-flex">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-0 me-0" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                    aria-label="Toggle navigation">
+
+                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
                 </button>
             </div>
 
@@ -57,15 +59,16 @@
             <div class="background-toggler offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
                 aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
 
-                <!-- Cabeçalho -->
-                <div class="offcanvas-header p-4">
+                <!-- Cabeçalho-->
+                <div class="offcanvas-header px-4 pb-0">
                     <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
-                        <span>Partiu?</span>
+                        <strong>Partiu?</strong>
                     </h5>
 
                     <!-- Botão Fechar Menu Mobile -->
                     <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
-                        aria-label="Close" data-bs-target="#bdNavbar"></button>
+                        aria-label="Close" data-bs-target="#bdNavbar">
+                    </button>
                 </div>
 
                 <!-- Menu -->
@@ -98,7 +101,8 @@
                                 Mais
                             </a>
 
-                            <ul class="background-dropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2"> <!-- About us -->
+                            <ul class="shadow background-dropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2">
+                                <!-- About us -->
                                 <li class="zoom"><a class="nav-link" href="/html/about.html">Sobre</a></li>
 
                                 <!-- Cadastre -->
@@ -122,8 +126,8 @@
                         <li class="zoom nav-item col-6 col-lg-auto">
                             <a class="nav-link" href="https://github.com/Fiigueiredo" target="_blank" rel="noopener">
 
-                                <svg xmlns="" width="16" height="16" fill="currentColor"
-                                    class="bi bi-github" viewBox="0 0 16 16">
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-github"
+                                    viewBox="0 0 16 16">
 
                                     <title>Github</title>
                                     <path
@@ -138,8 +142,8 @@
                             <a class="nav-link" href="https://www.linkedin.com/in/levifiigueiredo/" target="_blank"
                                 rel="noopener">
 
-                                <svg xmlns="" width="16" height="16" fill="currentColor"
-                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                                    viewBox="0 0 16 16">
 
                                     <title>Linkedin</title>
                                     <path
@@ -161,162 +165,153 @@
     </header>
 
     <!-- Seção Principal -->
-    <main>
+    <main class="">
         <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
-            <!-- Título da mensagem principal -->
-            <div class="container">
-                <div class="message">
-                    <h2>"Todos tem seu par, junte-se a nós e <span>partiu</span>"</h2>
+            <div class="homeSearch">
+                <div class="">
+                    <div class="mensage-search">
+                        <h2 class="title">
+                            We can go?
+                        </h2>
+                        <p class="subtitle">
+                            "Todos tem seu par, junte-se a nós e <span>partiu</span>"
+                        </p>
 
-                    <!-- Subtítulo da mensagem principal -->
-                    <p>Viagens, experiências e lugares. Tudo em um único serviço.</p>
-                </div>
+                        <form class="search-form">
 
-                <!-- Formulário de pesquisa -->
-                <div class="search-form">
-                    <form class="" action="">
-                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
-                            <!-- Insira o nome de destino -->
-                            <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Destination, city"
-                                    aria-label="City">
-                                <i class="bi bi-search"></i>
-                            </div>
+                            <!-- Formulário de pesquisa -->
+                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+                                <!-- Insira o nome de destino -->
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Destination, city">
+                                </div>
 
-                            <!-- Selecione o mês -->
-                            <div class="col-12">
-                                <select class="form-select">
-                                    <option selected>Qualquer Mês</option>
-                                    <option value="january">Janeiro</option>
-                                    <option value="february">Fevereiro</option>
-                                    <option value="march">Março</option>
-                                    <option value="april">Abril</option>
-                                    <option value="may">Maio</option>
-                                    <option value="june">Junho</option>
-                                    <option value="july">Julho</option>
-                                    <option value="august">Agosto</option>
-                                    <option value="september">Setembro</option>
-                                    <option value="october">Outubro</option>
-                                    <option value="november">Novembro</option>
-                                    <option value="december">Dezembro</option>
-                                </select>
-                                <span class="ti-calendar"></span>
-                            </div>
+                                <!-- Selecione o mês -->
+                                <div class="col-12">
+                                    <select class="form-select">
+                                        <option selected>Qualquer Mês</option>
+                                        <option value="january">Janeiro</option>
+                                        <option value="february">Fevereiro</option>
+                                        <option value="march">Março</option>
+                                        <option value="april">Abril</option>
+                                        <option value="may">Maio</option>
+                                        <option value="june">Junho</option>
+                                        <option value="july">Julho</option>
+                                        <option value="august">Agosto</option>
+                                        <option value="september">Setembro</option>
+                                        <option value="october">Outubro</option>
+                                        <option value="november">Novembro</option>
+                                        <option value="december">Dezembro</option>
+                                    </select>
+                                </div>
 
-                            <!-- Selecione a Ordem de pesquisa -->
-                            <div class="col-12">
-                                <select class="form-select">
-                                    <option selected="most-relevant">Mais relevante</option>
-                                    <option value="price-low">Menor preço</option>
-                                    <option value="price-high">Maior preço</option>
-                                    <option value="name">Nome</option>
-                                    <option value="popular">Popularidade</option>
-                                    <option value="review">Pontuação</option>
-                                </select>
-                                <span class="ti-exchange-vertical"></span>
-                            </div>
+                                <!-- Selecione a Ordem de pesquisa -->
+                                <div class="col-12">
+                                    <select class="form-select">
+                                        <option selected="most-relevant">Mais relevante</option>
+                                        <option value="price-low">Menor preço</option>
+                                        <option value="price-high">Maior preço</option>
+                                        <option value="name">Nome</option>
+                                        <option value="popular">Popularidade</option>
+                                        <option value="review">Pontuação</option>
+                                    </select>
+                                </div>
 
-                            <!-- Botão de Pesquisa -->
-                            <div class="col-12">
-                                <button class="btn btn-danger col-12" type="button">
-                                    Procurar
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Pesquisa avançada -->
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Pesquisa Avançada
-                    </a>
-
-                    <ul class="search-advanced dropdown-menu">
-                        <li><!-- Lista de categorias -->
-                            <div class="dropdown-item">
-                                <select class="form-select form-select-sm" aria-label="Small select example">
-                                    <option selected>Todas as Categorias</option>
-                                    <option value="mountain">Montanha</option>
-                                    <option value="rural">Rural</option>
-                                    <option value="snow-ice">Gelo &amp; Neve</option>
-                                    <option value="wildlife">Vida selvagem</option>
-                                </select>
-                                <span class="ti-angle-down"></span>
-                            </div>
-                        </li>
-
-                        <li><!-- Lista de destinos -->
-                            <div class="select-destination dropdown-item">
-                                <select class="form-select form-select-sm" aria-label="Small select example">
-
-                                    <option selected>Qualquer destino</option>
-                                    <option value="277">Tokyo</option>
-                                    <option value="278">Seoul</option>
-                                    <option value="279">Paris</option>
-                                    <option value="284">London</option>
-                                    <option value="285">Venice</option>
-                                    <option value="287">Miami</option>
-                                    <option value="289">Rome</option>
-                                    <option value="270">Prague</option>
-                                    <option value="291">California</option>
-                                    <option value="292">Kyoto</option>
-                                    <option value="293">Hong Kong</option>
-                                    <option value="294">Santorini</option>
-                                </select>
-                                <span class="ti-angle-down"></span>
-                            </div>
-                        </li>
-
-                        <li><!-- Inserir preço -->
-                            <div class="insert-price  dropdown-item dropdown-item">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">$</span>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text">.00</span>
+                                <!-- Botão de Pesquisa -->
+                                <div class="col-12">
+                                    <button class="shadow search-button btn btn-danger col-12" type="button">
+                                        Procurar
+                                    </button>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
 
+                            <!-- Pesquisa avançada -->
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pesquisa Avançada
+                                </a>
+
+                                <ul class="shadow background-dropdown search-advanced dropdown-menu">
+                                    <li><!-- Lista de categorias -->
+                                        <div class="dropdown-item">
+                                            <select class="form-select">
+                                                <option selected>Todas as Categorias</option>
+                                                <option value="mountain">Montanha</option>
+                                                <option value="rural">Rural</option>
+                                                <option value="snow-ice">Gelo &amp; Neve</option>
+                                                <option value="wildlife">Vida selvagem</option>
+                                            </select>
+
+                                        </div>
+                                    </li>
+
+                                    <li><!-- Lista de destinos -->
+                                        <div class="select-destination dropdown-item">
+                                            <select class="form-select">
+                                                <option selected>Qualquer destino</option>
+                                                <option value="001">Tokyo</option>
+                                                <option value="002">Seoul</option>
+                                                <option value="003">Paris</option>
+                                                <option value="004">London</option>
+                                                <option value="005">Venice</option>
+                                                <option value="006">Miami</option>
+                                                <option value="007">Rome</option>
+                                                <option value="008">Prague</option>
+                                                <option value="009">California</option>
+                                                <option value="010">Kyoto</option>
+                                                <option value="011">Hong Kong</option>
+                                                <option value="012">Santorini</option>
+                                            </select>
+                                        </div>
+                                    </li>
+
+                                    <li><!-- Inserir preço -->
+                                        <div class="insert-price dropdown-item">
+                                            <div class="input-group input-group-sm">
+                                                <span class="input-group-text">$</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Seção Rodapé -->
-    <footer class="special-day py-2 py-md-2 px-2 px-md-2 mt-5">
-        <div class="container py-4 py-md-4 px-4 px-md-3">
-
-            <!-- Footer top - Informações da agencia -->
+    <footer class="py-3 py-md-3 px-2 px-md-0">
+        <div class="container py-3 py-md-3 px-3 px-md-0">
             <div class="row">
                 <!-- About -->
                 <div class="col-lg-3">
 
                     <a class="d-inline-flex align-items-center text-body-emphasis"
-                        href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank" rel="Github noopener"
-                        aria-label="Partiu">
-                        <img id="logo-footer" class="d-block" src="/img/logo/logomarca1.png">
+                        href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank">
+                        <img id="logo-footer" class="d-block" src="/img/logo/logomarca2.png">
 
-                        <strong class="fs-5">
+                        <span class="fs-5">
                             Partiu
-                        </strong>
+                        </span>
                     </a>
 
                     <ul class="list-unstyled small">
                         <li class="mb-2">Projetado e construído com todo o amor do mundo por
-                            <a href="https://github.com/Fiigueiredo" target="_blank" rel="Developer noopener">
-                                Levi Figueiredo</a>, com a ajuda da
-
-                            <a href="https://recodepro.org.br/" target="_blank" rel="Support noopener">
-                                Recode PRO 2023</a>.
+                            <a href="https://github.com/Fiigueiredo" target="_blank"><span>Levi
+                                    Figueiredo</span></a>,
+                            com a ajuda da
+                            <a href="https://recodepro.org.br/" target="_blank">Recode PRO 2023</a>.
                         </li>
 
                         <li class="mb-2">Código licenciado
-                            <a href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE" target="_blank"
-                                rel="license noopener">MIT
-                            </a>.
+                            <a href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE"
+                                target="_blank">MIT</a>.
                         </li>
                         <li class="mb-2">Atualmente v1.0.3.</li>
                     </ul>
@@ -328,13 +323,13 @@
 
                     <ul class="list-unstyled small">
                         <p>
-                            <span>21-2345-6789</span>
+                            21-2345-6789
                         </p>
                         <p>
-                            <span>101 Main Street East Perl Habour 1009</span>
+                            101 Main Street East Perl Habour 1009
                         </p>
                         <p>
-                            <span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</span>
+                            Mon - Sat 8.00 - 18.00 Sunday CLOSED
                         </p>
                     </ul>
                 </div>
@@ -381,49 +376,49 @@
                         <!-- card-recent-trip 01 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27138570412/">
-                            <img src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
+                            <img class="shadow" src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
                                 alt="Rio De Janeiro" id="card-recent-trip">
                         </a>
 
                         <!-- card-recent-trip 02 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/28760131762/">
-                            <img src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg" alt="Buda"
-                                id="card-recent-trip">
+                            <img class="shadow" src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg"
+                                alt="Buda" id="card-recent-trip">
                         </a>
 
                         <!-- card-recent-trip 03 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27308262031/">
-                            <img src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg" alt="Pinguins"
-                                id="card-recent-trip">
+                            <img class="shadow" src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg"
+                                alt="Pinguins" id="card-recent-trip">
                         </a>
 
                         <!-- card-recent-trip 05 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27287965356/">
-                            <img src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg" alt="Singapura"
-                                id="card-recent-trip">
+                            <img class="shadow" src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg"
+                                alt="Singapura" id="card-recent-trip">
                         </a>
 
                         <!-- card-recent-trip 05 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/26520497604/">
-                            <img src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg" alt="Paris"
-                                id="card-recent-trip">
+                            <img class="shadow" src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg"
+                                alt="Paris" id="card-recent-trip">
                         </a>
 
                         <!-- card-recent-trip 06 -->
                         <a class="col zoom" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27012097142/">
-                            <img src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
+                            <img class="shadow" src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
                                 alt="The Great Gate" id="card-recent-trip">
                         </a>
                     </div>
                 </div>
 
                 <!-- Footer Menu-->
-                <div class="small">
+                <div class="small mt-3">
                     <ul class="nav" id="footer-menu">
                         <!-- Home -->
                         <li class="nav-item">
@@ -450,39 +445,18 @@
                         <a class="nav-link disabled" aria-disabled="true">Outro ITEM</a>
                     </li> -->
                     </ul>
-                </div>
 
-                <!-- Copyright -->
-                <div class="small" id="footer-copyright">
-                    <p>Copyright &copy; 2023 <span>Partiu™ Agency Trip</span> ⇆ Todos direitos
-                        reservados.</span>
+                    <!-- Copyright -->
+                    <p class="m-0" id="footer-copyright">Copyright &copy; 2023 <span>Partiu™ Agência de
+                            Viagens</span> ⇆
+                        Todos direitos
+                        reservados.
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
-
-
-
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Mais
-    </a>
-
-    <ul class="dropdown-menu dropdown-menu-dark">
-        <!-- About us -->
-        <li><a class="zoom dropdown-item" href="/html/about.html">Sobre</a></li>
-
-        <!-- Cadastre -->
-        <li><a class="zoom dropdown-item" href="/html/cadastre.html">Cadastro</a></li>
-
-        <!-- Contact us -->
-        <li><a class="zoom dropdown-item" href="/html/contact.html">Contato</a></li>
-
-        <!-- FAQs -->
-        <li><a class="zoom dropdown-item" href="/html/faq.html">FAQ</a></li>
-    </ul>
-</li>

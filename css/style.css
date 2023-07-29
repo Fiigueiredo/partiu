@@ -1,69 +1,83 @@
 @import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
-@import url(/css/img.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 :root {
-  /* cores */
-  --fundo0: #292929;
-  --fundo1: #515151;
-  --fundo2: #7a7a7a;
-  --fundo3: #a2a2a2;
-  --color0: #fbcb54;
-  --color1: #fbbc54;
-  --color2: #7dbb8c;
-  --color3: #79bd8f;
-  --color4: #070750;
-  --color5: #238ED6;
-  --color6: #ed145b;
-  --color7: #f21667;
-  --color8: #ED3E44;
+  --fontPadrão: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --fontSpecial: "Gotham HTF Light";
 
-  /* Cores do HOVER */
-  --: rgba(209, 219, 11, 0.733);
-  --color-highlight0: rgba(195, 19, 19, 0.708);
+  /* CORES DA LOGO */
+  --colorLogo0: #FBCC54;
+  --colorLogo1: #79BD8F;
+  --colorLogo2: #238ED6;
+  --colorLogo3: #ED3E44;
+  --colorLogo4: #070750;
+  --backgroundLogo0: rgba(251, 204, 84, 0.8);
+  --backgroundLogo1: rgba(121, 189, 143, 0.8);
+  --backgroundLogo2: rgba(35, 142, 214, 0.8);
+  --backgroundLogo3: rgba(237, 62, 68, 0.8);
+  --backgroundLogo4: rgba(7, 7, 80, 0.8);
+
+  --colorButton0: #FF4A52;
+  --colorButton1: #1ec6b6;
+
+  --color-highlight0: rgba(82, 22, 22, 0.708);
   --color-highlight1: #BF681B;
-  --color-button0: #F2AE2E;
-  --color-text: #2f2c42;
-  --color-subtitle: #592202;
+  --color-highlight2: rgba(209, 219, 11, 0.733);
+  --backgroundColor0: rgba(0, 0, 0, 0.5);
+  --backgroundColor1: #212529;
+  --backgroundColor2: #2B3035;
+  --backgroundColor3: #7a7a7a;
+  --backgroundColor4: #a2a2a2;
 
-  /* Dia Especial */
-  --specialBackground: #79bd8f;
-  --shadow-logo: #592202;
-  --specialColor: rgba(29, 29, 100, 0.6);
-  --specialFont: "Gotham HTF Light", sans-serif;
+  --colorText: #DEE2E6BF;
+  --colorSubtitle: #592202;
+  --shadowLogo: #592202;
+  --otherColor: #ED145B;
 }
 
-/* * {
-  font-family: monospace, Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+* {
   padding: 0;
   margin: 0;
-} */
-
-body {
-  font-family: var(--specialFont);
-  background: url(/img/outras/01.webp) no-repeat fixed center;
-  color: var(--specialBackground);
-  max-width: 1080px;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-/* NAVBAR */
+body {
+  background: url(/img/outras/journey-1130732.jpg) no-repeat fixed center;
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
+  background-position: center center;
+  font-family: var(--fontPadrão);
+}
+
+span,
+strong {
+  color: var(--colorLogo0);
+  font-family: var(--fontSpecial);
+}
+
+a,
+li:hover {
+  text-decoration: none;
+}
+
 .logo-navbar {
   max-width: 80px;
-  filter: drop-shadow(20px 10px 4px var(--shadow-logo));
+  filter: drop-shadow(20px 10px 4px var(--backgroundColor0));
 }
 
 .logo-toggler {
   max-width: 35px;
 }
 
-.background-toggler,
-.background-dropdown {
-  background-color: var(--specialBackground);
+.background-toggler {
+  background-color: var(--backgroundColor3);
 }
 
-.background-dropdown:hover {
-  filter: drop-shadow(3px 3px 3px var(--shadow-logo));
+.background-dropdown {
+  background-color: var(--colorLogo1);
+}
+
+.shadow:hover {
+  filter: drop-shadow(7px 7px 5px var(--backgroundColor0));
 }
 
 .zoom {
@@ -75,59 +89,48 @@ body {
   transform: scale(1.1);
 }
 
-
-
-
-
-
-
-/* .search-home {
-  display: flex;
-  justify-content: space-between;
+.search-button {
+  background-color: var(--colorButton0);
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
 }
 
-.search {
-  background-color: var();
-  border-radius: 15px;
-  padding: 25px;
-  opacity: 0.9;
-  width: 80%;
-  display: flex;
-  justify-content: space-evenly;
+.search-button:hover {
+  background-color: var(--colorButton1);
+  color: black;
 }
 
-.search-form {
-  background-color: #238ED6;
-  border-radius: 15px;
-  padding: 25px;
-  margin: 12px;
-  opacity: 0.9;
-  width: 80%;
+.homeSearch {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  min-height: 900px
 }
 
-#locations,
-#hotel,
-#range {
+.title, .subtitle{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+select,
+input {
+  border: none;
   display: flex;
-  flex-direction: column;
-} */
-
-
-
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
 
 /* footer */
-#logo-footer {
-  max-width: 50px;
-  filter: drop-shadow(5px 6px 5px var());
+footer {
+  background-color: var(--backgroundColor1);
+  color: var(--colorText);
 }
 
-#footer-menu,
-#footer-copyright {
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
+#logo-footer {
+  max-width: 50px;
+  filter: drop-shadow(5px 6px 5px var(--colorLogo0));
 }
 
 #card-recent-trip {
@@ -137,7 +140,7 @@ body {
 }
 
 #card-recent-trip:hover {
-  filter: drop-shadow(0px 3px 5px var());
+  filter: drop-shadow(0px 3px 5px var(--colorLogo1));
 }
 
 #methods-payment {
@@ -146,59 +149,11 @@ body {
   width: 10vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------Área de testes---------------*/
-/*
-button {
-  --wc-green: #7ad03a;
-  --wc-blue: #1ec6b6;
-  padding: .6em 1.5em .6em 1.5em;
+#footer-menu,
+#footer-copyright {
+  text-align: center;
+  justify-content: center;
 }
-
-.btn-danger:hover {
-  background-color: var(--wc-blue);
-}
-
-span {
-  color: var(--color-padrao);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-
-a,
-li :hover {
-  text-decoration: none;
-}
-
-
-
- */
-
-
 
 .esse {
   border: 1px solid red;

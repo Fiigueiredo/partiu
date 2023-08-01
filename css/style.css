@@ -23,7 +23,7 @@
   --color-highlight0: rgba(82, 22, 22, 0.708);
   --color-highlight1: #BF681B;
   --color-highlight2: rgba(209, 219, 11, 0.733);
-  --backgroundColor0: rgba(0, 0, 0, 0.5);
+  --backgroundColor0: rgba(0, 0, 0, 0.4);
   --backgroundColor1: #212529;
   --backgroundColor2: #2B3035;
   --backgroundColor3: #7a7a7a;
@@ -42,16 +42,18 @@
 }
 
 body {
-  background: url(/img/outras/journey-1130732.jpg) no-repeat fixed center;
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
+  background: url(/img/outras/01.webp) no-repeat fixed center;
+  background-image: url(/img/outras/01.webp);
   background-position: center center;
   font-family: var(--fontPadrão);
 }
 
 span,
-strong {
+strong,
+i {
   color: var(--colorLogo0);
   font-family: var(--fontSpecial);
+  font-weight: bold;
 }
 
 a,
@@ -61,7 +63,7 @@ li:hover {
 
 .logo-navbar {
   max-width: 80px;
-  filter: drop-shadow(20px 10px 4px var(--backgroundColor0));
+  filter: drop-shadow(20px 10px 5px var(--backgroundColor0));
 }
 
 .logo-toggler {
@@ -85,7 +87,6 @@ li:hover {
 }
 
 .zoom:hover {
-  text-transform: uppercase;
   transform: scale(1.1);
 }
 
@@ -108,7 +109,8 @@ li:hover {
   min-height: 900px
 }
 
-.title, .subtitle{
+.title,
+.subtitle {
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -122,7 +124,6 @@ input {
   height: 36px;
 }
 
-/* footer */
 footer {
   background-color: var(--backgroundColor1);
   color: var(--colorText);
@@ -158,3 +159,129 @@ footer {
 .esse {
   border: 1px solid red;
 }
+
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+#tropicalTreasures {
+  background-image:url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
+  background-position: center;
+  height:100%
+}
+
+.destinationTitle {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+.destinationCard {
+  height: 18rem;
+  margin: 12px;
+}
+
+#tourImage01 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg);
+  background-position: center top;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage02 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg);
+  background-position: center bottom;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage03 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg);
+  background-position: center bottom;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage04 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage05 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/venice-WBEUROCITIES16-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage06 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-10-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage07 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/39267772-prague-wallpapers-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage08 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-96420-700x466.jpeg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage09 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage10 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg;);
+  background-position: center right;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage11 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage12 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/santorini_1-700x466.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+/* 
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 14px;
+    line-height: 1.42857;
+    font-family: "Lato",sans-serif;
+    color: #212121;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+*/

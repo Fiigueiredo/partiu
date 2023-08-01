@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Biblioteca JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Fivecon -->
+    <link rel="shortcut icon" href="/img/logo/logomarca1.png" type="image/x-icon" />
+
+    <title>Home - Partiu</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+
+            <!-- Navbar toggle Esquerdo) -->
+            <div class="bd-navbar-toggle">
+                <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                    aria-controls="bdSidebar" aria-label="Toggle navigation">
+
+                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                </button> -->
+            </div>
+
+            <!-- Logo navbar -->
+            <a class="navbar-brand p-0 me-0 me-lg-2" href="/html/home.html" aria-label="Partiu">
+                <img class="logo-navbar d-block" src="/img/logo/logo-tm4.png" alt="Partiu">
+
+                <title>Partiu</title>
+            </a>
+
+
+            <!-- Navbar toggle Direito) -->
+            <div class="d-flex">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-0 me-0" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                    aria-label="Toggle navigation">
+
+                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                </button>
+            </div>
+
+            <!-- Menu mobile-->
+            <div class="background-toggler offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+
+                <!-- Cabeçalho-->
+                <div class="offcanvas-header px-4 pb-0">
+                    <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
+                        <strong>Partiu?</strong>
+                    </h5>
+
+                    <!-- Botão Fechar Menu Mobile -->
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close" data-bs-target="#bdNavbar">
+                    </button>
+                </div>
+
+                <!-- Menu -->
+                <div class="offcanvas-body p-4 pt-0 p-lg-0">
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <!-- Primeira parte da navbar -->
+                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+
+                        <!-- Home -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link active" aria-current="true" href="/html/home.html">Home</a>
+                        </li>
+
+                        <!-- Destinations -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        </li>
+
+                        <!-- Packages/Promotions -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="/html/promotions.html">Pacotes</a>
+                        </li>
+
+                        <!-- Dropdown menu -->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mais
+                            </a>
+
+                            <ul class="shadow background-dropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2">
+                                <!-- About us -->
+                                <li class="zoom"><a class="nav-link" href="/html/about.html">Sobre</a></li>
+
+                                <!-- Cadastre -->
+                                <li class="zoom"><a class="nav-link" href="/html/cadastre.html">Cadastro</a></li>
+
+                                <!-- Contact us -->
+                                <li class="zoom"><a class="nav-link" href="/html/contact.html">Contato</a></li>
+
+                                <!-- FAQs -->
+                                <li class="zoom"><a class="nav-link" href="/html/faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <!-- Segunda parte da navbar -->
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+
+                        <!-- Github -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="https://github.com/Fiigueiredo" target="_blank" rel="noopener">
+
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-github"
+                                    viewBox="0 0 16 16">
+
+                                    <title>Github</title>
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                <small class="d-lg-none ms-2">Github</small>
+                            </a>
+                        </li>
+
+                        <!-- Linkedin -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="https://www.linkedin.com/in/levifiigueiredo/" target="_blank"
+                                rel="noopener">
+
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                                    viewBox="0 0 16 16">
+
+                                    <title>Linkedin</title>
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                <small class="d-lg-none ms-2">Linkedin</small>
+                            </a>
+                        </li>
+
+                        <!-- Divisor -->
+                        <!--  <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                                <hr class="d-lg-none my-2 text-white-50">
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="">
+                <div class="">
+                    <img class="img" src="/img/outras/02.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="destinationTitle">
+                <h1>Um <strong>mundo</strong> de destinos</h1>
+
+                <div
+                    class="field field--name-field-description field--type-text-with-summary field--label-hidden field--item">
+                    <p>Um planeta. Infinitas possibilidades. Os destinos mais incríveis do mundo estão
+                        esperando por você. Se você quer escapar para um paraíso tropical banhado pelo
+                        sol ou imaginar montanhas deslumbrantes cobertas de neve antes de você, tudo o
+                        que você precisa saber é que a <strong>Partiu</strong> está ao seu lado a cada passo
+                        do caminho.</p>
+
+                    <p>Acreditamos que não há duas férias iguais, e nossos consultores bem viajados
+                        sabem exatamente o que é preciso para torná-lo memorável. De escapadinhas de fim
+                        de semana e viagens com lista de desejos a passeios com várias paradas, há um
+                        mundo inteiro para você descobrir.</p>
+                </div>
+
+                <div class="start-planning-btn">
+                    <a class="btn btn-primary" href="">
+                        Comece a planejar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+                <!-- Card Destinations 01 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/paris/">
+                            <div class="zoom shadow" id="tourImage01">
+                                <h3 class="destinationTitle">Paris</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 02 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/london/">
+                            <div class="zoom shadow" id="tourImage02">
+                                <h3 class="destinationTitle">London</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 03 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/miami/">
+                            <div class="zoom shadow" id="tourImage03">
+                                <h3 class="destinationTitle">Miami</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 04 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/california/">
+                            <div class="zoom shadow" id="tourImage04">
+                                <h3 class="destinationTitle">California</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 05 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/venice/">
+                            <div class="zoom shadow" id="tourImage05">
+                                <h3 class="destinationTitle">Venice</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 06 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/rome/">
+                            <div class="zoom shadow" id="tourImage06">
+                                <h3 class="destinationTitle">Rome</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 07 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/prague/">
+                            <div class="zoom shadow" id="tourImage07">
+                                <h3 class="destinationTitle">Prague</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 08 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/kyoto/">
+                            <div class="zoom shadow" id="tourImage08">
+                                <h3 class="destinationTitle">Kyoto</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 09 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/hong-kong/">
+                            <div class="zoom shadow" id="tourImage09">
+                                <h3 class="destinationTitle">Hong Kong</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 10 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/tokyo/">
+                            <div class="zoom shadow" id="tourImage10">
+                                <h3 class="destinationTitle">Tokyo</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 11 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/seoul/">
+                            <div class="zoom shadow" id="tourImage11">
+                                <h3 class="destinationTitle">Seoul</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Destinations 12 -->
+                <div class="col col-sm-12 col-md-3">
+                    <div class="destinationCard">
+                        <a href="https://themes.themegoods.com/grandtour/demo/destination/santorini/">
+                            <div class="zoom shadow" id="tourImage12">
+                                <h3 class="destinationTitle">Santorini</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+
+
+
+            <div class="">
+                <div class="">
+                    <h2>Tesouros Tropicais</h2>
+                    <div class="tile-description row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p>Se você está procurando areias cintilantes e mares cerúleos, nós temos tudo o que você
+                                precisa. Se você está animado para mergulhar na natação, mergulho com snorkel e esportes
+                                aquáticos ou apenas precisa relaxar na praia, há tantas possibilidades para explorar no
+                                México e no Caribe. Estes são apenas alguns dos nossos favoritos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+                            <!-- Card Destinations 12 -->
+                            <div class="col col-sm-12 col-md-3">
+                                <div class="destinationCard">
+                                    <a href="https://themes.themegoods.com/grandtour/demo/destination/santorini/">
+                                        <div class="zoom shadow" id="tourImage12">
+                                            <h3 class="destinationTitle">Santorini</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <a href="/vacations/north-america/mexico/cancun"
+                                        style="background-image:url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);">
+                                        <div class="zoom shadow" id="tropicalTreasures">
+                                            <span class="">Cancun</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <div class="zoom shadow">
+                                        <a href="/vacations/north-america/mexico/los-cabos"
+                                            style="background-image:url(https://www.libertytravel.com/sites/default/files/Los-Cabos_drilldown.jpg);">
+                                            <span class="">Los Cabos</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <a href="/vacations/north-america/mexico/riviera-maya"
+                                        style="background-image:url(https://www.libertytravel.com/sites/default/files/Riviera-Maya_drilldown.jpg);">
+                                        <span class="">Riviera Maya</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <a href="/vacations/caribbean/aruba"
+                                        style="background-image:url(https://www.libertytravel.com/sites/default/files/Aruba_drilldown.jpg);">
+                                        <span class="">Aruba</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <a href="/vacations/caribbean/jamaica"
+                                        style="background-image:url(https://www.libertytravel.com/sites/default/files/Jamaica_drilldown.jpg);">
+                                        <span class="">Jamaica</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="col col-sm-12">
+                                <div class="destinationCard">
+                                    <a href="/vacations/caribbean/st-lucia"
+                                        style="background-image:url(https://www.libertytravel.com/sites/default/files/St.-Lucia_drilldown.jpg);">
+                                        <span class="">St. Lucia</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="esse">
+
+                <div class="destinationTitle">
+                    <h2>Onde <strong>você</strong> gostaria de ir?</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col col-sm-4">
+                        <div class="destinationCard">
+                            <a href="/vacations/north-america/mexico"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Mexico_drilldown.jpg);">
+                                <span class="">Mexico</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-4">
+                        <div class="destinationCard">
+                            <a href="/vacations/north-america/usa"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/hunts-mesa-monument-valley-arizona_1745x1165.jpg);">
+                                <span class="">United States</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-4">
+                        <div class="destinationCard">
+                            <a href="/vacations/north-america/canada"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Canada_drilldown.jpg);">
+                                <span class="">Canada</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field--item">
+
+                <div class="paragraph row tile-row paragraph--type--4-tiles paragraph--view-mode--default">
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/africa"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Africa_drilldown.jpg);">
+                                <span class="">Africa</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <a href="/vacations/antarctica"
+                            style="background-image:url(https://www.libertytravel.com/sites/default/files/Antarctica_Iceberg_838x557_WIDGET%20A.png);">
+                            <span class="">Antarctica</span>
+                        </a>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/asia"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Asia_drilldown.jpg);">
+                                <span class="">Asia</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/australia"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Australia_drilldown.jpg);">
+                                <span class="">Australia</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field--item">
+
+                <div class="paragraph row tile-row paragraph--type--4-tiles paragraph--view-mode--default">
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/caribbean"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Caribbean_drilldown.jpg);">
+                                <span class="">Caribbean</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/central-america"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/central-america_drilldown.jpg);">
+                                <span class="">Central America</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/europe"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Europe_drilldown.jpg);">
+                                <span class="">Europe</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/indian-ocean"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/indian%20ocean-drilldown.jpg);">
+                                <span class="">Indian Ocean</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field--item">
+                <div class="row">
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/middle-east"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/Middle-East_drilldown.jpg);">
+                                <span class="">Middle East</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/north-america"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/North-America_drilldown.jpg);">
+                                <span class="">North America</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/south-america"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/South%20America_Iguazu%20Falls_838x557_WIDGET%20A.jpg);">
+                                <span class="">South America</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col col-sm-3">
+                        <div class="destinationCard">
+                            <a href="/vacations/south-pacific"
+                                style="background-image:url(https://www.libertytravel.com/sites/default/files/South-Pacific_drilldown.jpg);">
+                                <span class="">South Pacific</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Seção Rodapé -->
+    <footer class="py-3 py-md-3 px-2 px-md-0">
+        <div class="container py-3 py-md-3 px-3 px-md-0">
+            <div class="row">
+                <!-- About -->
+                <div class="col-lg-3">
+
+                    <a class="d-inline-flex align-items-center text-body-emphasis"
+                        href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank">
+                        <img id="logo-footer" class="d-block" src="/img/logo/logomarca2.png">
+
+                        <span class="fs-5">
+                            Partiu
+                        </span>
+                    </a>
+
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Projetado e construído com todo o amor do mundo por
+                            <a href="https://github.com/Fiigueiredo" target="_blank"><span>Levi
+                                    Figueiredo</span></a>,
+                            com a ajuda da
+                            <a href="https://recodepro.org.br/" target="_blank">Recode PRO 2023</a>.
+                        </li>
+
+                        <li class="mb-2">Código licenciado
+                            <a href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE"
+                                target="_blank">MIT</a>.
+                        </li>
+                        <li class="mb-2">Atualmente v1.0.3.</li>
+                    </ul>
+                </div>
+
+                <!-- Contact us -->
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <h5>Contact us</h5>
+
+                    <ul class="list-unstyled small">
+                        <p><i class="bi bi-telephone-fill"> </i>21-2345-6789</p>
+                        <p><i class="bi bi-geo-alt-fill"> </i>101 Main Street East Perl Habour 1009</p>
+                        <p><i class="bi bi-alarm"> </i>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+
+                    </ul>
+                </div>
+
+                <!-- Methods Payment -->
+                <div class="col-6 col-lg-2 ">
+                    <h5>Methods Payment</h5>
+
+                    <div class="row">
+
+                        <!-- metodo 01 -->
+                        <img src="/img/payment methods/visa.png" alt="Visa" id="methods-payment">
+                        </a>
+
+                        <!-- metodo 02 -->
+                        <img src="/img/payment methods/mastercard.png" alt="Mastercard" id="methods-payment"></a>
+
+                        <!-- metodo 03 -->
+                        <img src="/img/payment methods/american-express.png" alt="American Express"
+                            id="methods-payment"></a>
+
+                        <!-- metodo 04 -->
+                        <img src="/img/payment methods/hipercard.png" alt="Hipercard" id="methods-payment"></a>
+
+                        <!-- metodo 05 -->
+                        <img src="/img/payment methods/pix.png" alt="Pix" id="methods-payment"></a>
+
+                        <!-- metodo 06 -->
+                        <img src="/img/payment methods/paypal.png" alt="PayPal" id="methods-payment"></a>
+                    </div>
+
+                </div>
+
+                <!-- Recent Trips -->
+                <div class="col-lg-4 ">
+                    <h5>Recent Trips</h5>
+
+                    <div class="row row-cols-3 row-cols-sm-4 row-cols-md-4">
+                        <!-- card-recent-trip 01 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27138570412/">
+                            <img class="shadow" src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
+                                alt="Rio De Janeiro" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 02 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/28760131762/">
+                            <img class="shadow" src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg"
+                                alt="Buda" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 03 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27308262031/">
+                            <img class="shadow" src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg"
+                                alt="Pinguins" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 05 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27287965356/">
+                            <img class="shadow" src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg"
+                                alt="Singapura" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 05 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/26520497604/">
+                            <img class="shadow" src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg"
+                                alt="Paris" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 06 -->
+                        <a class="col zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27012097142/">
+                            <img class="shadow" src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
+                                alt="The Great Gate" id="card-recent-trip">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Menu-->
+                <div class="small mt-3">
+                    <ul class="nav" id="footer-menu">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/html/home.html">Home</a>
+                        </li>
+
+                        <!-- Destinos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        </li>
+
+                        <!-- Promoções -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/promotions.html">Promoções</a>
+                        </li>
+
+                        <!-- Contato -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contact.html">Contatos</a>
+                        </li>
+
+                        <!-- Item desativado -->
+                        <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Outro ITEM</a>
+                    </li> -->
+                    </ul>
+
+                    <!-- Copyright -->
+                    <p class="m-0" id="footer-copyright">Copyright &copy; 2023 <span>Partiu™ Agência de
+                            Viagens</span> ⇆
+                        Todos direitos
+                        reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

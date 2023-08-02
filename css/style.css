@@ -1,38 +1,57 @@
-@import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-  --fontPadrão: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --fontSpecial: "Gotham HTF Light";
+  --fontPadrão: "Gotham HTF Light", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --fontSpecial: 'Bebas Neue', sans-serif;
+  --colorText: #DEE2E6BF;
 
   /* CORES DA LOGO */
-  --colorLogo0: #FBCC54;
-  --colorLogo1: #79BD8F;
-  --colorLogo2: #238ED6;
-  --colorLogo3: #ED3E44;
-  --colorLogo4: #070750;
-  --backgroundLogo0: rgba(251, 204, 84, 0.8);
-  --backgroundLogo1: rgba(121, 189, 143, 0.8);
-  --backgroundLogo2: rgba(35, 142, 214, 0.8);
-  --backgroundLogo3: rgba(237, 62, 68, 0.8);
-  --backgroundLogo4: rgba(7, 7, 80, 0.8);
+  --colorLogo0: #070750;
+  --colorLogo1: #238ED6;
+  --colorLogo2: #79BD8F;
+  --colorLogo3: #FBCC54;
+  --colorLogo4: #ED3E44;
+
+  --backgroundLogo0: rgba(7, 7, 80, 0.8);
+  --backgroundLogo1: rgba(35, 142, 214, 0.8);
+  --backgroundLogo2: rgba(121, 189, 143, 0.8);
+  --backgroundLogo3: rgba(251, 204, 84, 0.8);
+  --backgroundLogo4: rgba(237, 62, 68, 0.8);
+
+  --gradientLogo: linear-gradient(to right,
+      rgba(7, 7, 80, 0.8),
+      rgba(35, 142, 214, 0.8),
+      rgba(121, 189, 143, 0.8),
+      rgba(251, 204, 84, 0.8),
+      rgba(237, 62, 68, 0.8));
+
+
+  --otherColor01: rgb(35, 39, 42);
+  --otherColor02: rgb(54, 57, 63);
+  --otherColor03: rgb(65, 135, 237);
+  --otherColor04: rgb(156, 132, 239);
+  --otherColor05: rgb(244, 127, 255);
+  --otherColor06: #ED145B;
 
   --colorButton0: #FF4A52;
   --colorButton1: #1ec6b6;
-
-  --color-highlight0: rgba(82, 22, 22, 0.708);
-  --color-highlight1: #BF681B;
-  --color-highlight2: rgba(209, 219, 11, 0.733);
   --backgroundColor0: rgba(0, 0, 0, 0.4);
   --backgroundColor1: #212529;
   --backgroundColor2: #2B3035;
   --backgroundColor3: #7a7a7a;
   --backgroundColor4: #a2a2a2;
 
-  --colorText: #DEE2E6BF;
-  --colorSubtitle: #592202;
-  --shadowLogo: #592202;
-  --otherColor: #ED145B;
+  --gradientBackground: linear-gradient(45deg,
+      black 50%,
+      #221133c2);
+
+  --gradientText: linear-gradient(to right,
+      rgba(35, 142, 214),
+      rgba(121, 189, 143),
+      rgba(251, 204, 84),
+      rgb(237, 62, 68));
 }
 
 * {
@@ -42,18 +61,33 @@
 }
 
 body {
-  background: url(/img/outras/01.webp) no-repeat fixed center;
-  background-image: url(/img/outras/01.webp);
-  background-position: center center;
+  background-image: var(--gradientBackground);
   font-family: var(--fontPadrão);
+  font-size: 1vmax;
+}
+
+.styleHome {
+  background-image: url(/img/outras/01.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+nav {
+  color: #fff;
+}
+
+gradient {
+  background-image: var(--gradientText);
+  font-family: var(--fontSpecial);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 span,
-strong,
 i {
-  color: var(--colorLogo0);
+  color: var(--colorLogo3);
   font-family: var(--fontSpecial);
-  font-weight: bold;
 }
 
 a,
@@ -75,7 +109,7 @@ li:hover {
 }
 
 .background-dropdown {
-  background-color: var(--colorLogo1);
+  background-color: var(--colorLogo3);
 }
 
 .shadow:hover {
@@ -92,6 +126,7 @@ li:hover {
 
 .search-button {
   background-color: var(--colorButton0);
+  color: white;
   border-radius: 5px;
   transition: 0.3s;
   border: none;
@@ -109,10 +144,12 @@ li:hover {
   min-height: 900px
 }
 
+.textContainer,
 .title,
 .subtitle {
   color: rgb(255, 255, 255);
   text-align: center;
+  font-size: 1.8vmin;
 }
 
 select,
@@ -131,7 +168,8 @@ footer {
 
 #logo-footer {
   max-width: 50px;
-  filter: drop-shadow(5px 6px 5px var(--colorLogo0));
+  margin: 10px;
+  filter: drop-shadow(5px 6px 5px var(--backgroundColor0));
 }
 
 #card-recent-trip {
@@ -161,21 +199,26 @@ footer {
 }
 
 
-.img {
-  width: 100%;
-  height: 100%;
+.imgDestino {
+  background-image: url(/img/outras/mapa.png);
+  margin: 0px;
+  padding: 0px;
 }
 
+
 #tropicalTreasures {
-  background-image:url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
+  background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
   background-position: center;
-  height:100%
+  height: 100%
 }
 
 .destinationTitle {
-  color: white;
+  font-family: var(--fontSpecial);
+  background-color: var(--gradientBackground);
+  color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .col {
@@ -190,7 +233,7 @@ footer {
 
 #tourImage01 {
   background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg);
-  background-position: center top;
+  background-position: center ;
   border-radius: 5px;
   height: 100%;
 }
@@ -271,6 +314,161 @@ footer {
   border-radius: 5px;
   height: 100%;
 }
+
+#tourImage13 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage14 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Los-Cabos_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage15 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Riviera-Maya_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage16 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Aruba_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage17 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Jamaica_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#tourImage18 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/St.-Lucia_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard01 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Mexico_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard02 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/hunts-mesa-monument-valley-arizona_1745x1165.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard03 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Canada_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard04 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Africa_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard05 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Antarctica_Iceberg_838x557_WIDGET%20A.png);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard06 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Asia_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard07 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Australia_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard08 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Caribbean_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard09 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/central-america_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard10 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Europe_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard11 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/indian%20ocean-drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard12 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/Middle-East_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard13 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/North-America_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard14 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/South%20America_Iguazu%20Falls_838x557_WIDGET%20A.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+#vacationCard15 {
+  background-image: url(https://www.libertytravel.com/sites/default/files/South-Pacific_drilldown.jpg);
+  background-position: center;
+  border-radius: 5px;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
 
 /* 
     -webkit-text-size-adjust: 100%;

@@ -25,7 +25,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+    <header class="navbar navbar-expand-lg bd-navbar fixed-top p-0">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
 
             <!-- Navbar toggle Esquerdo) -->
@@ -33,13 +33,13 @@
                 <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
                     aria-controls="bdSidebar" aria-label="Toggle navigation">
 
-                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
                 </button> -->
             </div>
 
             <!-- Logo navbar -->
             <a class="navbar-brand p-0 me-0 me-lg-2" href="/html/home.html">
-                <img class="logo-navbar d-block" src="/img/logo/logo-tm4.png" alt="Logogomarca Partiu">
+                <img class="logoNavbar d-block" src="/img/logo/logo2.png" alt="Logomarca Partiu">
 
                 <title>Partiu</title>
             </a>
@@ -51,7 +51,7 @@
                     data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
                     aria-label="Toggle navigation">
 
-                    <img class="shadow logo-toggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
                 </button>
             </div>
 
@@ -167,14 +167,65 @@
     <!-- Seção Principal -->
     <main>
         <!-- Main Top -->
-        <div class="container">
-            <div class="row p-0 m-0">
+        <div id="destinationSlide" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="col-md-12 col-lg-8 imgDestino shadow">
-                    <div>
-                        <h1></h1>
+            <!-- Indicadores de Slide -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#destinationSlide" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#destinationSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#destinationSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 01 -->
+                <div class="carousel-item active" data-bs-interval="8000">
+                    <img src="/img/outras/slider01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pensando em viajar?</h5>
+                        <p>"Só prepare as malas, que nós cuidaremos do seu descanso!"</p>
                     </div>
                 </div>
+
+                <!-- Slide 02 -->
+                <div class="carousel-item" data-bs-interval="8000">
+                    <img src="/img/outras/slider02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Só tem cuidado da casa minha filha?</h5>
+                        <p>"Já trabalhou demais, deixa com agente agora. Vá descansar!"</p>
+                    </div>
+                </div>
+
+                <!-- Slide 03 -->
+                <div class="carousel-item" data-bs-interval="8000">
+                    <img src="/img/outras/slider03.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Não sabe aonde levar a patroa?</h5>
+                        <p>"Essa é uma das descisões mais dificeis que você pode tomar. Para ajudar com isso, temos
+                            alguns pacotes"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de voltar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#destinationSlide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!--  Botão de avançar -->
+            <button class="carousel-control-next" type="button" data-bs-target="#destinationSlide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row p-0 m-0">
+
+                <div class="col-md-12 col-lg-8 imgDestino shadow"></div>
 
                 <div class="col-md-12 col-lg-4">
 

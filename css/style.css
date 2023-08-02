@@ -74,6 +74,9 @@ body {
 
 nav {
   color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgba(236, 235, 235, 0.089);
 }
 
 gradient {
@@ -95,12 +98,12 @@ li:hover {
   text-decoration: none;
 }
 
-.logo-navbar {
+.logoNavbar {
   max-width: 80px;
   filter: drop-shadow(20px 10px 5px var(--backgroundColor0));
 }
 
-.logo-toggler {
+.logoToggler {
   max-width: 35px;
 }
 
@@ -152,6 +155,30 @@ li:hover {
   font-size: 1.8vmin;
 }
 
+/* .carousel-inner {
+  height: 90vh;
+} */
+
+.carousel-caption {
+  top: 40%;
+  color: #fff;
+}
+
+.carousel-caption h5 {
+  font-family: var(--fontSpecial);
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.carousel-indicators .active {
+  background-color: var(--colorLogo3);
+}
+
 select,
 input {
   border: none;
@@ -198,13 +225,12 @@ footer {
   border: 1px solid red;
 }
 
-
 .imgDestino {
-  background-image: url(/img/outras/mapa.png);
+  background-image: url(/img/outras/map01-editada.png);
+  background-position: right;
   margin: 0px;
   padding: 0px;
 }
-
 
 #tropicalTreasures {
   background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
@@ -233,7 +259,7 @@ footer {
 
 #tourImage01 {
   background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg);
-  background-position: center ;
+  background-position: center;
   border-radius: 5px;
   height: 100%;
 }

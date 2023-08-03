@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Biblioteca JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Fivecon -->
+    <link rel="shortcut icon" href="/img/logo/logomarca1.png" type="image/x-icon" />
+
+    <title>Pacote | Partiu</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar navbar-expand-lg bd-navbar fixed-top p-0">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+
+            <!-- Navbar toggle Esquerdo) -->
+            <div class="bd-navbar-toggle">
+                <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+                    aria-controls="bdSidebar" aria-label="Toggle navigation">
+
+                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                </button> -->
+            </div>
+
+            <!-- Logo navbar -->
+            <a class="navbar-brand p-0 me-0 me-lg-2" href="/html/home.html">
+                <img class="logoNavbar d-block" src="/img/logo/logo3.png" alt="Logomarca Partiu">
+
+                <title>Partiu</title>
+            </a>
+
+
+            <!-- Navbar toggle Direito) -->
+            <div class="d-flex">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-0 me-0" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                    aria-label="Toggle navigation">
+
+                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
+                </button>
+            </div>
+
+            <!-- Menu mobile-->
+            <div class="background-toggler offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+
+                <!-- Cabeçalho-->
+                <div class="offcanvas-header px-4 pb-0">
+                    <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
+                        <span>Partiu?</span>
+                    </h5>
+
+                    <!-- Botão Fechar Menu Mobile -->
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
+                        aria-label="Close" data-bs-target="#bdNavbar">
+                    </button>
+                </div>
+
+                <!-- Menu -->
+                <div class="offcanvas-body p-4 pt-0 p-lg-0">
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <!-- Primeira parte da navbar -->
+                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+
+                        <!-- Home -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link active" aria-current="true" href="/html/home.html">Home</a>
+                        </li>
+
+                        <!-- Destinations -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        </li>
+
+                        <!-- Packages/Promotions -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="/html/promotions.html">Pacotes</a>
+                        </li>
+
+                        <!-- Dropdown menu -->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mais
+                            </a>
+
+                            <ul class="shadow background-dropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2">
+                                <!-- About us -->
+                                <li class="zoom"><a class="nav-link" href="/html/about.html">Sobre</a></li>
+
+                                <!-- Cadastre -->
+                                <li class="zoom"><a class="nav-link" href="/html/cadastre.html">Cadastro</a></li>
+
+                                <!-- Contact us -->
+                                <li class="zoom"><a class="nav-link" href="/html/contact.html">Contato</a></li>
+
+                                <!-- FAQs -->
+                                <li class="zoom"><a class="nav-link" href="/html/faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <!-- Segunda parte da navbar -->
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+
+                        <!-- Github -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="https://github.com/Fiigueiredo" target="_blank" rel="noopener">
+
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-github"
+                                    viewBox="0 0 16 16">
+
+                                    <title>Github</title>
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                <small class="d-lg-none ms-2">Github</small>
+                            </a>
+                        </li>
+
+                        <!-- Linkedin -->
+                        <li class="zoom nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="https://www.linkedin.com/in/levifiigueiredo/" target="_blank"
+                                rel="noopener">
+
+                                <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                                    viewBox="0 0 16 16">
+
+                                    <title>Linkedin</title>
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                <small class="d-lg-none ms-2">Linkedin</small>
+                            </a>
+                        </li>
+
+                        <!-- Divisor -->
+                        <!--  <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                                <hr class="d-lg-none my-2 text-white-50">
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="container">
+        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+
+
+            <div class="show-grid row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/peru-splendors-small-group-discovery-globus-tours/147766"
+                            class="c-block__link offer-card" data-tracking-id="147766">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Machu%20Picchu.jpg?itok=pHNbZPgn"
+                                        alt="peru-splendors-small-group-discovery-globus-tours" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Peru Splendors - Small Group Discovery | Globus Tours
+                                    </h6><span>
+                                        <div><!-- react-text: 13 -->Peru<!-- /react-text --><!-- react-text: 14 -->,
+                                            <!-- /react-text --><!-- react-text: 15 -->South
+                                            America<!-- /react-text --><br><!-- react-text: 17 --> +
+                                            <!-- /react-text --><!-- react-text: 18 -->2<!-- /react-text --><!-- react-text: 19 -->
+                                            more<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 22 -->7<!-- /react-text --><!-- react-text: 23 -->
+                                        <!-- /react-text --><!-- react-text: 24 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 26 -->from
+                                        $<!-- /react-text --><!-- react-text: 27 -->2995<!-- /react-text --><!-- react-text: 28 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147766">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/gourmet-tuscany-small-group-discovery-cosmos/147591"
+                            class="c-block__link offer-card" data-tracking-id="147591">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/tuscany-1707191_1280.jpg?itok=k5dNOSft"
+                                        alt="gourmet-tuscany-small-group-discovery-cosmos" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Gourmet Tuscany - Small Group Discovery | Cosmos</h6>
+                                    <span>
+                                        <div><!-- react-text: 45 -->Italy<!-- /react-text --><!-- react-text: 46 -->,
+                                            <!-- /react-text --><!-- react-text: 47 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 50 -->7<!-- /react-text --><!-- react-text: 51 -->
+                                        <!-- /react-text --><!-- react-text: 52 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 54 -->from
+                                        $<!-- /react-text --><!-- react-text: 55 -->1789<!-- /react-text --><!-- react-text: 56 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147591">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/best-of-antarctica-pristine-wilderness-ocean-endeavour-intrepid-travel/142676"
+                            class="c-block__link offer-card" data-tracking-id="142676">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/best-anartic-intrepid.jpg?itok=yikzl0K7"
+                                        alt="best-of-antarctica-pristine-wilderness-ocean-endeavour-intrepid-travel"
+                                        class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Best of Antarctica: Pristine Wilderness (Ocean Endeavour)
+                                        | Intrepid Travel</h6><span>
+                                        <div>
+                                            <!-- react-text: 73 -->Antarctica<!-- /react-text --><!-- react-text: 74 -->,
+                                            <!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 77 -->10<!-- /react-text --><!-- react-text: 78 -->
+                                        <!-- /react-text --><!-- react-text: 79 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 81 -->from
+                                        $<!-- /react-text --><!-- react-text: 82 -->6045<!-- /react-text --><!-- react-text: 83 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="142676">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/hot-tam-scotland-by-design-globus-tours/144736"
+                            class="c-block__link offer-card" data-tracking-id="144736">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Scotland%2C%20Inverness_614664923_0.jpg?itok=s6OIjMQD"
+                                        alt="hot-tam-scotland-by-design-globus-tours" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Hot Tam!: Scotland By Design | Globus Tours </h6><span>
+                                        <div>
+                                            <!-- react-text: 100 -->Scotland<!-- /react-text --><!-- react-text: 101 -->,
+                                            <!-- /react-text --><!-- react-text: 102 -->United
+                                            Kingdom<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 105 -->8<!-- /react-text --><!-- react-text: 106 -->
+                                        <!-- /react-text --><!-- react-text: 107 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 109 -->from
+                                        $<!-- /react-text --><!-- react-text: 110 -->2749<!-- /react-text --><!-- react-text: 111 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="144736">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/Tuscan-Treats-%7C-Blue-Roads-Touring/79431"
+                            class="c-block__link offer-card" data-tracking-id="79431">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/tuscan-treats-backroads.jpg?itok=Mya30sJE"
+                                        alt="Tuscan-Treats-%7C-Blue-Roads-Touring" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Tuscan Treats | Blue-Roads Touring</h6><span>
+                                        <div><!-- react-text: 128 -->Italy<!-- /react-text --><!-- react-text: 129 -->,
+                                            <!-- /react-text --><!-- react-text: 130 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 133 -->7<!-- /react-text --><!-- react-text: 134 -->
+                                        <!-- /react-text --><!-- react-text: 135 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 137 -->from
+                                        $<!-- /react-text --><!-- react-text: 138 -->2319<!-- /react-text --><!-- react-text: 139 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="79431">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/cherry-blossom-festival-on-the-go-tours/145861"
+                            class="c-block__link offer-card" data-tracking-id="145861">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Cherry%20blossoms%20OTG.JPG?itok=NL7K9urQ"
+                                        alt="cherry-blossom-festival-on-the-go-tours" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Cherry Blossom Festival | On The Go Tours </h6><span>
+                                        <div><!-- react-text: 156 -->Japan<!-- /react-text --><!-- react-text: 157 -->,
+                                            <!-- /react-text --><!-- react-text: 158 -->Asia<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 161 -->12<!-- /react-text --><!-- react-text: 162 -->
+                                        <!-- /react-text --><!-- react-text: 163 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 165 -->from
+                                        $<!-- /react-text --><!-- react-text: 166 -->5465<!-- /react-text --><!-- react-text: 167 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="145861">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/canada-believe-your-eyes-western-canada-by-design-globus-tours/147431"
+                            class="c-block__link offer-card" data-tracking-id="147431">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/CN%2C%20BC%20Whistler%20Capilano%20Suspension%20Bridge_770756149.jpg?itok=o4V4Elp2"
+                                        alt="canada-believe-your-eyes-western-canada-by-design-globus-tours"
+                                        class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Canada Believe Your Eyes: Western Canada By Design |
+                                        Globus Tours</h6><span>
+                                        <div><!-- react-text: 184 -->Canada<!-- /react-text --><!-- react-text: 185 -->,
+                                            <!-- /react-text --><!-- react-text: 186 -->North
+                                            America<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 189 -->6<!-- /react-text --><!-- react-text: 190 -->
+                                        <!-- /react-text --><!-- react-text: 191 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 193 -->from
+                                        $<!-- /react-text --><!-- react-text: 194 -->2725<!-- /react-text --><!-- react-text: 195 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147431">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/That%27s-Amore%21%3A-Italy-By-Design-%7C-Globus-Tours/147391"
+                            class="c-block__link offer-card" data-tracking-id="147391">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/EU%2C%20Italy%2C%20Truffle%20Hunting%201402181270.jpg?itok=Sbas0skA"
+                                        alt="That%27s-Amore%21%3A-Italy-By-Design-%7C-Globus-Tours" class="offer-img">
+                                </div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">That's Amore!: Italy By Design | Globus Tours</h6><span>
+                                        <div><!-- react-text: 212 -->Italy<!-- /react-text --><!-- react-text: 213 -->,
+                                            <!-- /react-text --><!-- react-text: 214 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 217 -->6<!-- /react-text --><!-- react-text: 218 -->
+                                        <!-- /react-text --><!-- react-text: 219 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 221 -->from
+                                        $<!-- /react-text --><!-- react-text: 222 -->2029<!-- /react-text --><!-- react-text: 223 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147391">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/fiestas-siestas-southern-spain-by-design-globus-tours/147426"
+                            class="c-block__link offer-card" data-tracking-id="147426">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Globus%20Fiestas%20%26%20Siestas.jpg?itok=fX0h-7kn"
+                                        alt="fiestas-siestas-southern-spain-by-design-globus-tours" class="offer-img">
+                                </div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Fiestas &amp; Siestas: Southern Spain By Design | Globus
+                                        Tours</h6><span>
+                                        <div><!-- react-text: 240 -->Spain<!-- /react-text --><!-- react-text: 241 -->,
+                                            <!-- /react-text --><!-- react-text: 242 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 245 -->8<!-- /react-text --><!-- react-text: 246 -->
+                                        <!-- /react-text --><!-- react-text: 247 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 249 -->from
+                                        $<!-- /react-text --><!-- react-text: 250 -->2279<!-- /react-text --><!-- react-text: 251 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147426">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/great-ocean-road-kangaroo-island-escape-trafalgar/147001"
+                            class="c-block__link offer-card" data-tracking-id="147001">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Trafalgar%2012%20apostles.JPG?itok=fg8kND7a"
+                                        alt="great-ocean-road-kangaroo-island-escape-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Great Ocean Road &amp; Kangaroo Island Escape | Trafalgar
+                                    </h6><span>
+                                        <div>
+                                            <!-- react-text: 268 -->Australia<!-- /react-text --><!-- react-text: 269 -->,
+                                            <!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 272 -->6<!-- /react-text --><!-- react-text: 273 -->
+                                        <!-- /react-text --><!-- react-text: 274 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 276 -->from
+                                        $<!-- /react-text --><!-- react-text: 277 -->3075<!-- /react-text --><!-- react-text: 278 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147001">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/costa-rica-eco-adventure-trafalgar/142621"
+                            class="c-block__link offer-card" data-tracking-id="142621">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/costa-rica-monograms.jpg?itok=YyYkEA_N"
+                                        alt="costa-rica-eco-adventure-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Costa Rica Eco Adventure | Trafalgar</h6><span>
+                                        <div><!-- react-text: 295 -->Costa
+                                            Rica<!-- /react-text --><!-- react-text: 296 -->,
+                                            <!-- /react-text --><!-- react-text: 297 -->Central
+                                            America<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 300 -->7<!-- /react-text --><!-- react-text: 301 -->
+                                        <!-- /react-text --><!-- react-text: 302 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 304 -->from
+                                        $<!-- /react-text --><!-- react-text: 305 -->1889<!-- /react-text --><!-- react-text: 306 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="142621">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/antarctica-classic-g-adventures/146731" class="c-block__link offer-card"
+                            data-tracking-id="146731">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Antarctica%20Half%20Moon%20Island.jpg?itok=4tCquQTM"
+                                        alt="antarctica-classic-g-adventures" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Antarctica Classic | G Adventures</h6><span>
+                                        <div>
+                                            <!-- react-text: 323 -->Antarctica<!-- /react-text --><!-- react-text: 324 -->,
+                                            <!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 327 -->10<!-- /react-text --><!-- react-text: 328 -->
+                                        <!-- /react-text --><!-- react-text: 329 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 331 -->from
+                                        $<!-- /react-text --><!-- react-text: 332 -->6159<!-- /react-text --><!-- react-text: 333 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="146731">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/iceland-northern-lights-golden-circle-g-adventures/117091"
+                            class="c-block__link offer-card" data-tracking-id="117091">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/iceland-g-adventures.jpg?itok=ZQghXt0F"
+                                        alt="iceland-northern-lights-golden-circle-g-adventures" class="offer-img">
+                                </div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Iceland Northern Lights &amp; Golden Circle | G
+                                        Adventures</h6><span>
+                                        <div>
+                                            <!-- react-text: 350 -->Reykjavik<!-- /react-text --><!-- react-text: 351 -->,
+                                            <!-- /react-text --><!-- react-text: 352 -->Iceland<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 355 -->4<!-- /react-text --><!-- react-text: 356 -->
+                                        <!-- /react-text --><!-- react-text: 357 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 359 -->from
+                                        $<!-- /react-text --><!-- react-text: 360 -->1999<!-- /react-text --><!-- react-text: 361 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="117091">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/tastes-and-sounds-of-the-south-trafalgar/83146"
+                            class="c-block__link offer-card" data-tracking-id="83146">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Memphis.png?itok=pF5NFsT9"
+                                        alt="tastes-and-sounds-of-the-south-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Tastes and Sounds of the South | Trafalgar</h6><span>
+                                        <div>
+                                            <!-- react-text: 378 -->Louisiana<!-- /react-text --><!-- react-text: 379 -->,
+                                            <!-- /react-text --><!-- react-text: 380 -->United
+                                            States<!-- /react-text --><br><!-- react-text: 382 --> +
+                                            <!-- /react-text --><!-- react-text: 383 -->2<!-- /react-text --><!-- react-text: 384 -->
+                                            more<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 387 -->9<!-- /react-text --><!-- react-text: 388 -->
+                                        <!-- /react-text --><!-- react-text: 389 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 391 -->from
+                                        $<!-- /react-text --><!-- react-text: 392 -->3039<!-- /react-text --><!-- react-text: 393 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="83146">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/wonders-of-ancient-egypt-trafalgar/75071"
+                            class="c-block__link offer-card" data-tracking-id="75071">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/egypt-traflagar.jpg?itok=wlMEMiim"
+                                        alt="wonders-of-ancient-egypt-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Wonders of Ancient Egypt | Trafalgar</h6><span>
+                                        <div><!-- react-text: 410 -->Egypt<!-- /react-text --><!-- react-text: 411 -->,
+                                            <!-- /react-text --><!-- react-text: 412 -->Africa<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 415 -->11<!-- /react-text --><!-- react-text: 416 -->
+                                        <!-- /react-text --><!-- react-text: 417 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 419 -->from
+                                        $<!-- /react-text --><!-- react-text: 420 -->3515<!-- /react-text --><!-- react-text: 421 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="75071">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/highlights-of-peru-trafalgar/83126" class="c-block__link offer-card"
+                            data-tracking-id="83126">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/machu-picchu-43389_1280.jpg?itok=8rktj3Nb"
+                                        alt="highlights-of-peru-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Highlights of Peru | Trafalgar</h6><span>
+                                        <div><!-- react-text: 438 -->Peru<!-- /react-text --><!-- react-text: 439 -->,
+                                            <!-- /react-text --><!-- react-text: 440 -->South
+                                            America<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 443 -->11<!-- /react-text --><!-- react-text: 444 -->
+                                        <!-- /react-text --><!-- react-text: 445 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 447 -->from
+                                        $<!-- /react-text --><!-- react-text: 448 -->3855<!-- /react-text --><!-- react-text: 449 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="83126">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/americas-great-desert-national-parks-trafalgar/147576"
+                            class="c-block__link offer-card" data-tracking-id="147576">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/joshua-tree-1772159_1280.jpg?itok=b6Z0OjU8"
+                                        alt="americas-great-desert-national-parks-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">America's Great Desert National Parks | Trafalgar</h6>
+                                    <span>
+                                        <div><!-- react-text: 466 -->Nevada<!-- /react-text --><!-- react-text: 467 -->,
+                                            <!-- /react-text --><!-- react-text: 468 -->United
+                                            States<!-- /react-text --><br><!-- react-text: 470 --> +
+                                            <!-- /react-text --><!-- react-text: 471 -->2<!-- /react-text --><!-- react-text: 472 -->
+                                            more<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 475 -->9<!-- /react-text --><!-- react-text: 476 -->
+                                        <!-- /react-text --><!-- react-text: 477 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 479 -->from
+                                        $<!-- /react-text --><!-- react-text: 480 -->3199<!-- /react-text --><!-- react-text: 481 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147576">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/highlights-of-singapore-and-malaysia-trafalgar/145831"
+                            class="c-block__link offer-card" data-tracking-id="145831">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Malaysia%20-%20Sam%20Poh%20Tong%20Temple.png?itok=RELDSORx"
+                                        alt="highlights-of-singapore-and-malaysia-trafalgar" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Highlights of Singapore and Malaysia | Trafalgar</h6>
+                                    <span>
+                                        <div>
+                                            <!-- react-text: 498 -->Malaysia<!-- /react-text --><!-- react-text: 499 -->,
+                                            <!-- /react-text --><!-- react-text: 500 -->Asia<!-- /react-text --><br><!-- react-text: 502 -->Singapore<!-- /react-text --><!-- react-text: 503 -->,
+                                            <!-- /react-text --><!-- react-text: 504 -->Asia<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 507 -->11<!-- /react-text --><!-- react-text: 508 -->
+                                        <!-- /react-text --><!-- react-text: 509 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 511 -->from
+                                        $<!-- /react-text --><!-- react-text: 512 -->3895<!-- /react-text --><!-- react-text: 513 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="145831">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/wellness-bali-g-adventures/145306" class="c-block__link offer-card"
+                            data-tracking-id="145306">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/Wellness%20Bali.jpg?itok=qPVfvWb8"
+                                        alt="wellness-bali-g-adventures" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Wellness Bali | G Adventures </h6><span>
+                                        <div><!-- react-text: 530 -->Bali<!-- /react-text --><!-- react-text: 531 -->,
+                                            <!-- /react-text --><!-- react-text: 532 -->Indonesia<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 535 -->8<!-- /react-text --><!-- react-text: 536 -->
+                                        <!-- /react-text --><!-- react-text: 537 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 539 -->from
+                                        $<!-- /react-text --><!-- react-text: 540 -->1349<!-- /react-text --><!-- react-text: 541 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="145306">Save</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/northern-lights-quest-of-iceland-cie-tours/147511"
+                            class="c-block__link offer-card" data-tracking-id="147511">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/NorthernLights_NorthernLightsQuestofIceland_Featured.jpg?itok=2UxuaGUt"
+                                        alt="northern-lights-quest-of-iceland-cie-tours" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Northern Lights Quest of Iceland | CIE Tours</h6><span>
+                                        <div>
+                                            <!-- react-text: 558 -->Iceland<!-- /react-text --><!-- react-text: 559 -->,
+                                            <!-- /react-text --><!-- react-text: 560 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        <!-- react-text: 563 -->5<!-- /react-text --><!-- react-text: 564 -->
+                                        <!-- /react-text --><!-- react-text: 565 -->nights<!-- /react-text -->
+                                    </p>
+                                    <p class="blue-text"><!-- react-text: 567 -->from
+                                        $<!-- /react-text --><!-- react-text: 568 -->2895<!-- /react-text --><!-- react-text: 569 -->*<!-- /react-text -->
+                                    </p>
+                                    <div class="c-block__content--footer">
+                                        <ul class="icons-list">
+                                            <li><i class="offerList-tour" aria-hidden="true" data-balloon="Tour"
+                                                    data-balloon-pos="up"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147511">Save</button></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="offer-card-wrapper offer-list-wrapper"><a
+                            href="/tours/deals/irish-classic-cie-tours/147506" class="c-block__link offer-card"
+                            data-tracking-id="147506">
+                            <div class="c-block">
+                                <div class="card-img-container objectFitFix"><img
+                                        src="https://oms2.libertytravel.com/sites/default/files/styles/offer_card_image/public/CIE%20-%20Irish%20Classic%20Self%20Drive_1.jpg?itok=PHYvInQk"
+                                        alt="irish-classic-cie-tours" class="offer-img"></div>
+                                <div class="c-block__content">
+                                    <h6 class="c-block__title">Irish Classic | CIE Tours</h6><span>
+                                        <div>
+                                            <!-- react-text: 586 -->Ireland<!-- /react-text --><!-- react-text: 587 -->,
+                                            <!-- /react-text --><!-- react-text: 588 -->Europe<!-- /react-text -->
+                                        </div>
+                                    </span>
+                                    <div></div>
+                                    <p class="blue-text">
+                                        11 nights
+                                    </p>
+                                    <p class="blue-text">
+                                        from $2945*
+                                    </p>
+                                    
+                                    <div class="esse --footer">
+                                        <ul class="icons-list">
+                                            <li><i class="bi bi-flag-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div><button class="save-offer-heart" data-offer-id="147506">Save</button></div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="c-block__link evergreenCard">
+                        <div class="c-block">
+                            <div class="card-img-container objectFitFix"><img
+                                    src="/sites/default/files/LT590111269 consultant-option 2.jpg" class="offer-img">
+                            </div>
+                            <div class="c-block__content">
+                                <h6 class="c-block__title">Don’t see what you’re looking for? Contact a travel expert to
+                                    help you plan a custom vacation.</h6>
+                                <div class="c-block__content--footer"><button class="evergreenButton btn btn-primary"
+                                        data-toggle="modal" data-target="#contactModal">Start Planning</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Seção Rodapé -->
+    <footer class="py-3 py-md-3 px-2 px-md-0">
+        <div class="container py-3 py-md-3 px-3 px-md-0">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-lg-3">
+
+                    <a class="d-inline-flex align-items-center text-body-emphasis"
+                        href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank">
+                        <img id="logo-footer" class="d-block" src="/img/logo/logomarca2.png">
+
+                        <span class="fs-5">
+                            Partiu
+                        </span>
+                    </a>
+
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Projetado e construído com todo o amor do mundo por
+                            <a href="https://github.com/Fiigueiredo" target="_blank">Levi Figueiredo</a>,
+                            com a ajuda da
+                            <a href="https://recodepro.org.br/" target="_blank">Recode PRO 2023</a>.
+                        </li>
+
+                        <li class="mb-2">Código licenciado
+                            <a href="https://github.com/Fiigueiredo/agencia-viagens/blob/main/LICENSE"
+                                target="_blank">MIT</a>.
+                        </li>
+                        <li class="mb-2">Atualmente v1.0.3.</li>
+                    </ul>
+                </div>
+
+                <!-- Contact us -->
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <h5>Contact us</h5>
+
+                    <ul class="list-unstyled small m-0 p-0">
+                        <p><i class="bi bi-telephone-fill"></i>・21-2345-6789</p>
+                        <p><i class="bi bi-geo-alt-fill"></i>・101 Main Street East Perl Habour 1009</p>
+                        <p><i class="bi bi-alarm"></i>・Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                    </ul>
+                </div>
+
+                <!-- Methods Payment -->
+                <div class="col-6 col-lg-2 m-0 p-0">
+                    <h5>Method Payment</h5>
+
+                    <div class="row">
+                        <!-- metodo 01 -->
+                        <img class="col-6" src="/img/payment methods/american-express.png" alt="American Express"
+                            id="methods-payment"></a>
+
+                        <!-- metodo 02 -->
+                        <img class="col-6" src="/img/payment methods/mastercard.png" alt="Mastercard"
+                            id="methods-payment"></a>
+
+                        <!-- metodo 03 -->
+                        <img class="col-6" src="/img/payment methods/visa.png" alt="Visa" id="methods-payment"></a>
+
+                        <!-- metodo 04 -->
+                        <img class="col-6" src="/img/payment methods/hipercard.png" alt="Hipercard"
+                            id="methods-payment"></a>
+
+                        <!-- metodo 05 -->
+                        <img class="col-6" src="/img/payment methods/pix.png" alt="Pix" id="methods-payment"></a>
+                    </div>
+                </div>
+
+                <!-- Recent Trips         row-cols-3 row-cols-sm-4 row-cols-md-4-->
+                <div class="col-lg-4 m-0 p-0">
+                    <h5>Recent Trips</h5>
+
+                    <div class="row m-0 p-0">
+                        <!-- card-recent-trip 01 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27138570412/">
+                            <img class="shadow" src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
+                                alt="Rio De Janeiro" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 02 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/28760131762/">
+                            <img class="shadow" src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg"
+                                alt="Buda" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 03 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27308262031/">
+                            <img class="shadow" src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg"
+                                alt="Pinguins" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 05 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27287965356/">
+                            <img class="shadow" src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg"
+                                alt="Singapura" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 05 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/26520497604/">
+                            <img class="shadow" src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg"
+                                alt="Paris" id="card-recent-trip">
+                        </a>
+
+                        <!-- card-recent-trip 06 -->
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                            href="https://www.flickr.com/photos/artiephotography/27012097142/">
+                            <img class="shadow" src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
+                                alt="The Great Gate" id="card-recent-trip">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Menu-->
+                <div class="mt-3 small">
+                    <ul class="nav" id="footer-menu">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/html/home.html">Home</a>
+                        </li>
+
+                        <!-- Destinos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        </li>
+
+                        <!-- Promoções -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/promotions.html">Promoções</a>
+                        </li>
+
+                        <!-- Contato -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contact.html">Contatos</a>
+                        </li>
+
+                        <!-- Item desativado -->
+                        <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Outro ITEM</a>
+                    </li> -->
+                    </ul>
+
+                    <!-- Copyright -->
+                    <p class="m-0 small" id="footer-copyright">
+                        Copyright &copy; 2023 <span>Partiu™ Agência de Viagens</span> ⇆ Todos direitos
+                        reservados.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

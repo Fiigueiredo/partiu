@@ -27,7 +27,6 @@
       rgba(251, 204, 84, 0.8),
       rgba(237, 62, 68, 0.8));
 
-
   --otherColor01: rgb(35, 39, 42);
   --otherColor02: rgb(54, 57, 63);
   --otherColor03: rgb(65, 135, 237);
@@ -44,7 +43,7 @@
   --backgroundColor4: #a2a2a2;
 
   --gradientBackground: linear-gradient(45deg,
-      black 50%,
+      black,
       #221133c2);
 
   --gradientText: linear-gradient(to right,
@@ -63,7 +62,7 @@
 body {
   background-image: var(--gradientBackground);
   font-family: var(--fontPadrão);
-  font-size: 1vmax;
+  /* font-size: 1vmax; */
 }
 
 .styleHome {
@@ -74,7 +73,7 @@ body {
 
 nav {
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9em;
   font-weight: 700;
   background-color: rgba(236, 235, 235, 0.089);
 }
@@ -91,6 +90,16 @@ span,
 i {
   color: var(--colorLogo3);
   font-family: var(--fontSpecial);
+}
+
+.contactMaps {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.contactMaps {
+  filter: drop-shadow(7px 7px 15px  var(--colorLogo3));
 }
 
 a,
@@ -147,10 +156,14 @@ li:hover {
   min-height: 900px
 }
 
+.otherTitle, .title {
+color: #fff;
+text-align: center;
+}
+
 .textContainer,
-.title,
 .subtitle {
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-align: center;
   font-size: 1.8vmin;
 }
@@ -179,6 +192,10 @@ li:hover {
   background-color: var(--colorLogo3);
 }
 
+form {
+  color: #fff;
+}
+
 select,
 input {
   border: none;
@@ -201,18 +218,12 @@ footer {
 
 #card-recent-trip {
   border-radius: 5px;
-  max-width: 80px;
+  max-width: 120px;
   margin: 5px;
 }
 
 #card-recent-trip:hover {
-  filter: drop-shadow(0px 3px 5px var(--colorLogo1));
-}
-
-#methods-payment {
-  display: flex;
-  justify-content: space-evenly;
-  width: 10vh;
+  filter: drop-shadow(0px 3px 5px var(--colorLogo3));
 }
 
 #footer-menu,
@@ -247,14 +258,27 @@ footer {
   border-radius: 5px;
 }
 
-.col {
-  margin: 0;
-  padding: 0;
-}
-
 .destinationCard {
   height: 18rem;
   margin: 12px;
+}
+
+#contactOverlay01 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg);
+  background-position: center center;
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  font-size: 15px;
+  padding: 100px 0px;
+}
+
+#contactOverlay02 {
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1.jpg);
+  background-position: center center;
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  font-size: 15px;
+  padding: 100px 0px;
 }
 
 #tourImage01 {
@@ -492,11 +516,48 @@ footer {
 
 
 
-
-
-
-
 /* 
+--woocommerce: #a46497;
+--wc-green: #7ad03a;
+--wc-red: #a00;
+--wc-orange: #ffba00;
+--wc-blue: #2ea2cc;
+--wc-primary: #a46497;
+--wc-primary-text: white;
+--wc-secondary: #ebe9eb;
+--wc-secondary-text: #515151;
+--wc-highlight: #77a464;
+--wc-highligh-text: white;
+--wc-content-bg: #fff;
+--wc-subtext: #767676;
+-webkit-font-smoothing: antialiased;
+line-height: 1.7;
+word-wrap: break-word;
+-webkit-text-size-adjust: none;
+margin: 0;
+border: 0;
+font-weight: inherit;
+font-style: inherit;
+font-family: inherit;
+vertical-align: baseline;
+float: left;
+background-position: 50% 50%!important;
+background-size: cover!important;
+box-sizing: border-box;
+position: relative;
+background-repeat: no-repeat;
+width: 100%;
+padding: 30px!important;
+z-index: 0;
+overflow: hidden;
+clear: none;
+font-size: 18px;
+text-align: center;
+color: rgb(255, 255, 255) !important;
+background-image: url("https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg");
+
+
+
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-size: 14px;

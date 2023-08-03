@@ -8,10 +8,12 @@
 
 ## Índice
 
-* [Sobre o projeto](#upon)
-* [Tech](#technologies)
-* [Screenshots](#screenshots)
-* [Updates](#update)
+- [agencia-viagens](#agencia-viagens)
+  - [Índice](#índice)
+  - [Upon](#upon)
+  - [💻 Technologies](#-technologies)
+  - [Screenshots](#screenshots)
+  - [Update](#update)
 
 <br>
 
@@ -34,12 +36,12 @@ Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' p
 <br>
 
 - <em>Usando WEB</em>: <img width="50px" src="/img/icons/html-js-css.png">
-  - Criar as página: Home;
-  - Criar as página: Destino;
-  - Criar as página: Promoções;
-  - Criar as página: Contato;
-  - As páginas devem ser responsivas ou adaptáveis;
-  - Faça as formatações de acordo com a paleta de cores escolhida;
+ [x] Criar as página: Home;
+ [x] Criar as página: Destino;
+ [ ] Criar as página: Promoções;
+ [x] Criar as página: Contato;
+ [ ] As páginas devem ser responsivas ou adaptáveis;
+ [ ] Faça as formatações de acordo com a paleta de cores escolhida;
 
 <br>
 

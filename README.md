@@ -38,13 +38,13 @@ Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' p
 <br>
 
 - <em>Usando WEB</em>: <img width="50px" src="/img/icons/html-js-css.png">
-  
-  :white_check_mark: Criar as página: Home;
-  :white_check_mark: Criar as página: Destino;
-  :white_large_square: Criar as página: Promoções;
-  :white_check_mark: Criar as página: Contato;
-  :white_large_square: As páginas devem ser responsivas ou adaptáveis;
-  :white_large_square: Faça as formatações de acordo com a paleta de cores escolhida;
+
+  - &#x2611; Criar as página: Home;
+  - &#x2611; Criar as página: Destino;
+  - &#x2610; Criar as página: Promoções;
+  - &#x2611; Criar as página: Contato;
+  - &#x2610; As páginas devem ser responsivas ou adaptáveis;
+  - &#x2610; Faça as formatações de acordo com a paleta de cores escolhida;
 
 <br>
 
@@ -56,5 +56,12 @@ Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' p
 
 ## Update
 
-:white_large_square: Criar um protótipo da primeira versão do site;<br>
+&#x2610; Criar um protótipo da primeira versão do site;<br>
 Sorry, so far we have no versions
+
+
+<!-- 
+&#x2611; Visto
+&#x2610; Desmarcado
+&#x2612; Marcado com x 
+-->

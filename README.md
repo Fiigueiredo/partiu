@@ -38,6 +38,7 @@ Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' p
 <br>
 
 - <em>Usando WEB</em>: <img width="50px" src="/img/icons/html-js-css.png">
+  
   [x] Criar as página: Home;
   [x] Criar as página: Destino;
   [ ] Criar as página: Promoções;

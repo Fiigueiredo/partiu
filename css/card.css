@@ -1,0 +1,82 @@
+#promotionBg {
+    background-image: url(https://images.pexels.com/photos/618848/pexels-photo-618848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    transform-style: preserve-3d;
+}
+
+.promotionCards {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+}
+
+.promotionCards .cardBody {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.9s ease;
+}
+
+.promotionImg {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.promotionImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    background: var(--gradientBackground);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content div {
+    transform-style: preserve-3d;
+    background: var(--teste);
+    transform: translateZ(100px);
+    padding: 20px;
+}
+
+.content div h3 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.content div p {
+    font-size: 0.6rem;
+}
+
+.promotionCards:hover .cardBody {
+    transform: rotateY(180deg);
+}

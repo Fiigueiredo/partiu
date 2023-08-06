@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(/css/card.css);
 
 :root {
   --fontPadrão: "Gotham HTF Light", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -13,27 +14,6 @@
   --colorLogo2: #79BD8F;
   --colorLogo3: #FBCC54;
   --colorLogo4: #ED3E44;
-
-  --backgroundLogo0: rgba(7, 7, 80, 0.8);
-  --backgroundLogo1: rgba(35, 142, 214, 0.8);
-  --backgroundLogo2: rgba(121, 189, 143, 0.8);
-  --backgroundLogo3: rgba(251, 204, 84, 0.8);
-  --backgroundLogo4: rgba(237, 62, 68, 0.8);
-
-  --gradientLogo: linear-gradient(to right,
-      rgba(7, 7, 80, 0.8),
-      rgba(35, 142, 214, 0.8),
-      rgba(121, 189, 143, 0.8),
-      rgba(251, 204, 84, 0.8),
-      rgba(237, 62, 68, 0.8));
-
-  --otherColor01: rgb(35, 39, 42);
-  --otherColor02: rgb(54, 57, 63);
-  --otherColor03: rgb(65, 135, 237);
-  --otherColor04: rgb(156, 132, 239);
-  --otherColor05: rgb(244, 127, 255);
-  --otherColor06: #ED145B;
-
   --colorButton0: #FF4A52;
   --colorButton1: #1ec6b6;
   --backgroundColor0: rgba(0, 0, 0, 0.4);
@@ -49,8 +29,11 @@
   --gradientText: linear-gradient(to right,
       rgba(35, 142, 214),
       rgba(121, 189, 143),
-      rgba(251, 204, 84),
-      rgb(237, 62, 68));
+      rgba(251, 204, 84));
+
+  --teste: linear-gradient(45deg,
+      #a91c78 20%,
+      #1687ed);
 }
 
 * {
@@ -59,6 +42,15 @@
   box-sizing: border-box;
 }
 
+.esse {
+  border: 1px solid red;
+}
+
+.containerAlign {
+  justify-content: center;
+}
+
+
 body {
   background-image: var(--gradientBackground);
   font-family: var(--fontPadrão);
@@ -66,9 +58,10 @@ body {
 }
 
 .styleHome {
-  background-image: url(/img/outras/bg01.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
+  background-position: center bottom;
+  background-size: cover;
+  color: var(--logo01);
 }
 
 nav {
@@ -78,6 +71,8 @@ nav {
   background-color: rgba(236, 235, 235, 0.089);
 }
 
+
+
 gradient {
   background-image: var(--gradientText);
   font-family: var(--fontSpecial);
@@ -86,10 +81,19 @@ gradient {
   color: transparent;
 }
 
+strong {
+  background-image: var(--gradientText);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
 span,
 i {
   color: var(--colorLogo3);
   font-family: var(--fontSpecial);
+  font-size: 12px;
 }
 
 .contactMaps {
@@ -99,7 +103,7 @@ i {
 }
 
 .contactMaps {
-  filter: drop-shadow(7px 7px 15px  var(--colorLogo3));
+  filter: drop-shadow(7px 7px 15px var(--colorLogo3));
 }
 
 a,
@@ -116,11 +120,11 @@ li:hover {
   max-width: 35px;
 }
 
-.background-toggler {
+.backgroundToggler {
   background-color: var(--backgroundColor3);
 }
 
-.background-dropdown {
+.backgroundDropdown {
   background-color: var(--colorLogo3);
 }
 
@@ -153,12 +157,20 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 900px
+  min-height: 40rem;
 }
 
-.otherTitle, .title {
-color: #fff;
-text-align: center;
+.otherTitle,
+.title {
+  color: #fff;
+  text-align: center;
+}
+
+.titleContainer {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8vmin;
+  padding: 20px;
 }
 
 .textContainer,
@@ -210,30 +222,26 @@ footer {
   color: var(--colorText);
 }
 
-#logo-footer {
+#footerLogo {
   max-width: 50px;
   margin: 10px;
   filter: drop-shadow(5px 6px 5px var(--backgroundColor0));
 }
 
-#card-recent-trip {
+#footerCard {
   border-radius: 5px;
   max-width: 120px;
   margin: 5px;
 }
 
-#card-recent-trip:hover {
+#footerCard:hover {
   filter: drop-shadow(0px 3px 5px var(--colorLogo3));
 }
 
-#footer-menu,
-#footer-copyright {
+.footerNavbar,
+.footerCopyright {
   text-align: center;
   justify-content: center;
-}
-
-.esse {
-  border: 1px solid red;
 }
 
 .imgDestino {

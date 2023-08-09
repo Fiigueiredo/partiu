@@ -4,7 +4,7 @@
 @import url(/css/card.css);
 
 :root {
-  --fontPadrão: "Gotham HTF Light", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --fontPadrão: "Gotham HTF Light", system-ui, -apple-system;
   --fontSpecial: 'Bebas Neue', sans-serif;
   --colorText: #DEE2E6BF;
 
@@ -22,16 +22,20 @@
   --backgroundColor3: #7a7a7a;
   --backgroundColor4: #a2a2a2;
 
-  --gradientBackground: linear-gradient(45deg,
-      black,
-      #221133c2);
+  --gradient: linear-gradient(45deg,
+      #3434bc,
+      #cc7cf0);
 
-  --gradientText: linear-gradient(to right,
+  --gradientLogo: linear-gradient(to right,
       rgba(35, 142, 214),
       rgba(121, 189, 143),
       rgba(251, 204, 84));
 
-  --teste: linear-gradient(45deg,
+  --gradientBackground: linear-gradient(45deg,
+      black,
+      #221133c2);
+
+  --gradientPromotion: linear-gradient(45deg,
       #a91c78 20%,
       #1687ed);
 }
@@ -42,29 +46,84 @@
   box-sizing: border-box;
 }
 
-.esse {
-  border: 1px solid red;
+body {
+  background-image: var(--);
+  font-family: var(--);
 }
+
+/* Navbar */
+nav #navbarLogo {
+  max-width: 65px;
+  filter: drop-shadow(20px 10px 5px var(--));
+}
+
+nav #togglerLogo {
+  max-width: 30px;
+}
+
+nav .nav-link {
+  color: white;
+}
+
+.togglerBackground {
+  background-color: var(--backgroundColor3);
+}
+
+.dropdownBackground {
+  background-color: var(--colorLogo3);
+}
+
+span {
+  font-family: var(--fontSpecial);
+  background-image: var(--gradientLogo);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+i {
+  color: var(--colorLogo3);
+}
+
+hr {
+  border-image: var(--gradientLogo) 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .containerAlign {
   justify-content: center;
 }
 
 
-body {
-  background-image: var(--gradientBackground);
-  font-family: var(--fontPadrão);
-  /* font-size: 1vmax; */
-}
+
 
 .styleHome {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
-  background-position: center bottom;
+  /*  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg); */
+  /*  background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyTx?ver=75ec); */
+  background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11N2LZ.img);
+  background-position: center;
   background-size: cover;
   color: var(--logo01);
 }
 
-nav {
+.sticky-top {
+  font: optional;
   color: #fff;
   font-size: 0.9em;
   font-weight: 700;
@@ -73,8 +132,13 @@ nav {
 
 
 
+
+
+
+
+
 gradient {
-  background-image: var(--gradientText);
+  background-image: var(--gradientLogo);
   font-family: var(--fontSpecial);
   background-clip: text;
   -webkit-background-clip: text;
@@ -82,19 +146,19 @@ gradient {
 }
 
 strong {
-  background-image: var(--gradientText);
+  background-image: var(--gradientLogo);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 700;
 }
 
-span,
-i {
-  color: var(--colorLogo3);
-  font-family: var(--fontSpecial);
-  font-size: 12px;
-}
+
+
+
+
+
+
 
 .contactMaps {
   border-radius: 10px;
@@ -109,15 +173,6 @@ i {
 a,
 li:hover {
   text-decoration: none;
-}
-
-.logoNavbar {
-  max-width: 80px;
-  filter: drop-shadow(20px 10px 5px var(--backgroundColor0));
-}
-
-.logoToggler {
-  max-width: 35px;
 }
 
 .backgroundToggler {
@@ -217,6 +272,7 @@ input {
   height: 36px;
 }
 
+/* Footer */
 footer {
   background-color: var(--backgroundColor1);
   color: var(--colorText);
@@ -228,13 +284,17 @@ footer {
   filter: drop-shadow(5px 6px 5px var(--backgroundColor0));
 }
 
-#footerCard {
-  border-radius: 5px;
-  max-width: 120px;
-  margin: 5px;
+#methodsPayment{ /* formas de pagamento */
+  max-width: 25%;
 }
 
-#footerCard:hover {
+#recentTrip { /* viagens recentes */
+  max-width: 90%;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+#recentTrip:hover { /* viagens recentes */
   filter: drop-shadow(0px 3px 5px var(--colorLogo3));
 }
 
@@ -243,6 +303,10 @@ footer {
   text-align: center;
   justify-content: center;
 }
+
+
+
+
 
 .imgDestino {
   background-image: url(/img/outras/map01-editada.png);
@@ -273,7 +337,8 @@ footer {
 
 #contactOverlay01 {
   background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg);
-  background-position: center center;
+  background-position: center;
+  background-size: cover;
   color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 15px;
@@ -282,7 +347,8 @@ footer {
 
 #contactOverlay02 {
   background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1.jpg);
-  background-position: center center;
+  background-position: center;
+  background-size: cover;
   color: rgb(255, 255, 255) !important;
   text-align: center;
   font-size: 15px;
@@ -519,62 +585,3 @@ footer {
   border-radius: 5px;
   height: 100%;
 }
-
-
-
-
-
-/* 
---woocommerce: #a46497;
---wc-green: #7ad03a;
---wc-red: #a00;
---wc-orange: #ffba00;
---wc-blue: #2ea2cc;
---wc-primary: #a46497;
---wc-primary-text: white;
---wc-secondary: #ebe9eb;
---wc-secondary-text: #515151;
---wc-highlight: #77a464;
---wc-highligh-text: white;
---wc-content-bg: #fff;
---wc-subtext: #767676;
--webkit-font-smoothing: antialiased;
-line-height: 1.7;
-word-wrap: break-word;
--webkit-text-size-adjust: none;
-margin: 0;
-border: 0;
-font-weight: inherit;
-font-style: inherit;
-font-family: inherit;
-vertical-align: baseline;
-float: left;
-background-position: 50% 50%!important;
-background-size: cover!important;
-box-sizing: border-box;
-position: relative;
-background-repeat: no-repeat;
-width: 100%;
-padding: 30px!important;
-z-index: 0;
-overflow: hidden;
-clear: none;
-font-size: 18px;
-text-align: center;
-color: rgb(255, 255, 255) !important;
-background-image: url("https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg");
-
-
-
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    font-size: 14px;
-    line-height: 1.42857;
-    font-family: "Lato",sans-serif;
-    color: #212121;
-    box-sizing: border-box;
-    position: relative;
-    min-height: 1px;
-    padding-left: 7px;
-    padding-right: 7px;
-*/

@@ -15,138 +15,113 @@
         crossorigin="anonymous"></script>
 
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- Fivecon -->
-    <link rel="shortcut icon" href="/img/logo/logomarca1.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/img/logo/logomarca1.png" type="image/x-icon" />
 
     <title>Contato | Partiu</title>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header class="container-fluid navbar navbar-expand-lg bd-navbar sticky-top">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
 
-            <!-- Navbar toggle Esquerdo) -->
-            <div class="bd-navbar-toggle">
-                <!-- <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
-                    aria-controls="bdSidebar" aria-label="Toggle navigation">
+            <!-- Botão toggle lado esquerdo -->
+            <!-- <div class="bd-navbar-toggle">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle navigation">
 
-                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
-                </button> -->
-            </div>
-
-            <!-- Logo navbar -->
-            <a class="navbar-brand p-0 me-0 me-lg-2" href="/html/home.html">
-                <img class="logoNavbar d-block" src="/img/logo/logo2.png" alt="Logomarca Partiu">
-
-                <title>Partiu</title>
-            </a>
-
-            <!-- Navbar toggle Direito) -->
-            <div class="d-flex">
-                <button class="navbar-toggler d-flex d-lg-none order-3 p-0 me-0" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
-                    aria-label="Toggle navigation">
-
-                    <img class="shadow logoToggler" src="/img/logo/logomarca1.png" fill="currentColor">
-                </button>
-            </div>
-            <!-- <div class="d-flex">
-                    <button type="button" class="DocSearch DocSearch-Button">
-
-                        <span class="DocSearch-Button-Container">
-                            <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-search"
-                                viewBox="0 0 16 16">
-
-                                <title>Pesquisar em /title>
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-
-                            <span class="DocSearch-Button-Placeholder">
-                                Search
-                            </span>
-                        </span>
-                    </button>
-                </div>
-
-                <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-
-                    <i class="bi bi-three-dots"></i>
+                    <img id="togglerLogo" src="/assets/img/logo/logomarca1.png" fill="currentColor">
                 </button>
             </div> -->
 
+            <!-- Logo navbar -->
+            <a class="navbar-brand mx-auto" href="/index.html">
+                <img class="d-block" id="navbarLogo" src="/assets/img/logo/logo4.png" alt="Logomarca Partiu">
+                <title>Partiu™</title>
+            </a>
+
+            <!-- Navbar toggle lado direito) -->
+            <div class="d-flex">
+                <button class="navbar-toggler border-0 d-lg-none order-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+
+                    <img id="togglerLogo" src="/assets/img/logo/logomarca1.png" fill="currentColor">
+                </button>
+            </div>
+
             <!-- Menu mobile -->
-            <div class="backgroundToggler offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
-                aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true" aria-modal="true"> <!-- role="dialog" -->
+            <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true" aria-modal="true">
 
                 <div class="offcanvas-header px-4 pb-0">
                     <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">
-                        <span>Partiu?</span>
+                        <span>Partiu™</span>
                     </h5>
 
-                    <!-- Botão Fechar Menu Mobile -->
                     <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
                         aria-label="Close" data-bs-target="#bdNavbar">
                     </button>
                 </div>
 
-                <!-- Menu -->
-                <div class=" offcanvas-body p-4 pt-0 p-lg-0">
+                <div class="offcanvas-body p-4 pt-0 p-lg-0"><!-- Menu -->
 
                     <hr class="d-lg-none text-white-50">
-
                     <!-- Primeira parte da navbar -->
-                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav ms-md-auto">
 
-                        <!-- Home -->
-                        <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link active" aria-current="true" href="/html/home.html">Home</a>
+                        <li class="nav-item col-6 col-lg-auto"><!-- Home -->
+                            <a class="nav-link" aria-current="true" href="/index.html">Home</a>
                         </li>
 
-                        <!-- Destinations -->
-                        <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        <li class="nav-item col-6 col-lg-auto"><!-- Destinations -->
+                            <a class="nav-link" href="/assets/html/destinations.html">Destinos</a>
                         </li>
 
-                        <!-- Packages/Promotions -->
-                        <li class="zoom nav-item col-6 col-lg-auto">
-                            <a class="nav-link" href="/html/promotions.html">Pacotes</a>
+                        <li class="nav-item col-6 col-lg-auto"><!-- Packages/Promotions -->
+                            <a class="nav-link" href="/assets/html/promotions.html">Pacotes</a>
                         </li>
 
-                        <!-- Dropdown menu -->
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Mais
-                            </a>
+                        <li class="nav-item dropdown"><!-- Dropdown menu -->
+                            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
 
-                            <ul class="shadow backgroundDropdown dropdown-menu py-2 px-3 py-lg-2 px-lg-2">
-                                <!-- About us -->
-                                <li class="zoom"><a class="nav-link" href="/html/about.html">Sobre</a></li>
+                                <span class="visually-hidden">Partiu™&nbsp;</span><i class="bi bi-cone-striped"></i>
+                                <span class="d-lg-none" aria-hidden="true">Mais</span>
+                            </button>
 
-                                <!-- Cadastre -->
-                                <li class="zoom"><a class="nav-link" href="/html/cadastre.html">Cadastro</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><!-- Other option -->
+                                    <h6 class="dropdown-header">Outras opções</h6>
+                                    <hr class="dropdown-divider">
+                                </li>
 
-                                <!-- Contact us -->
-                                <li class="zoom"><a class="nav-link" href="/html/contact.html">Contato</a></li>
+                                <li> <!-- About us -->
+                                    <a class="dropdown-item disabled" aria-current="true"
+                                        href="/assets/html/about.html">Sobre</a>
+                                </li>
 
-                                <!-- FAQs -->
-                                <li class="zoom"><a class="nav-link" href="/html/faq.html">FAQ</a></li>
+                                <li><!-- Sign up -->
+                                    <a class="dropdown-item disabled" href="/assets/html/cadastre.html">Cadastro</a>
+                                </li>
+
+                                <li><!-- Contact us -->
+                                    <a class="dropdown-item" href="/assets/html/contact.html">Contato</a>
+                                </li>
+                                
+                                <li><!-- FAQ -->
+                                    <a class="dropdown-item disabled" href="/assets/html/faq.html">FAQ</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
 
                     <hr class="d-lg-none text-white-50">
-
                     <!-- Segunda parte da navbar -->
                     <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
 
-                        <!-- Github -->
-                        <li class="zoom nav-item col-6 col-lg-auto">
+                        <li class="nav-item col-6 col-lg-auto"><!-- Github -->
                             <a class="nav-link" href="https://github.com/Fiigueiredo" target="_blank" rel="noopener">
 
                                 <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-github"
@@ -160,8 +135,7 @@
                             </a>
                         </li>
 
-                        <!-- Linkedin -->
-                        <li class="zoom nav-item col-6 col-lg-auto">
+                        <li class="nav-item col-6 col-lg-auto"><!-- Linkedin -->
                             <a class="nav-link" href="https://www.linkedin.com/in/levifiigueiredo/" target="_blank"
                                 rel="noopener">
 
@@ -177,26 +151,23 @@
                         </li>
 
                         <!-- Divisor -->
-                        <!--  <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-                                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-                                <hr class="d-lg-none my-2 text-white-50">
-                            </li> -->
+                        <!-- <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none my-2 text-white-50">
+                        </li> -->
                     </ul>
                 </div>
-
-                <!-- <div class="offcanvas-backdrop fade "></div> -->
             </div>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
     <main>
         <!-- Main - Top -->
         <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
             <div class="container">
                 <div class="otherTitle p-2 m-2">
                     <h2 class="p-2 m-0">
-                        Envie sua mensagem
+                        Envie sua <strong>mensagem</strong>
                         <i class="bi bi-chat-dots"></i>
                     </h2>
 
@@ -297,18 +268,13 @@
         </div>
     </main>
 
-    <!-- Seção Rodapé -->
-    <footer class="container-fluid px-md-2 py-md-3 mt-5">
+    <footer class="container-fluid px-md-2 py-md-3">
         <div class="container-xxl py-3 py-sm-4 px-4 px-sm-4">
-
-            <div class="row">
-
-                <!-- About -->
-                <div class="col-lg-3">
-
+            <div class="row">              
+                <div class="col-lg-3"><!-- About -->
                     <a class="d-inline-flex align-items-center text-body-emphasis"
                         href="https://github.com/Fiigueiredo/agencia-viagens" target="_blank">
-                        <img id="footerLogo" class="d-block" src="/img/logo/logomarca2.png">
+                        <img id="footerLogo" class="d-block" src="/assets/img/logo/logomarca2.png">
 
                         <strong class="fs-5">
                             Partiu™
@@ -334,10 +300,9 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- Contact us -->
-                <div class="col-6 col-lg-2 offset-lg-1">
-                    <h5>Contact us</h5>
+                
+                <div class="col-6 col-lg-2 offset-lg-1"><!-- Contact us -->
+                    <h5>Fale Conosco</h5>
 
                     <ul class="list-unstyled small m-0 p-0">
                         <p><i class="bi bi-telephone-fill"></i>・21-2345-6789</p>
@@ -345,114 +310,102 @@
                         <p><i class="bi bi-alarm"></i>・Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
                     </ul>
                 </div>
-
-                <!-- Methods Payment -->
-                <div class="col-6 col-lg-2 m-0 p-0">
-                    <h5>Method Payment</h5>
+               
+                <div class="col-6 col-lg-2 m-0 p-0"> <!-- Methods Payment -->
+                    <h5>Aceitamos</h5>
 
                     <div class="row">
                         <!-- metodo 01 -->
-                        <img class="col-6" src="/img/payment methods/american-express.png" alt="American Express"
-                            id="methods-payment"></a>
+                        <img class="col-6" src="/assets/img/payment methods/american-express.png" alt="American Express"
+                            id="methodsPayment"></a>
 
                         <!-- metodo 02 -->
-                        <img class="col-6" src="/img/payment methods/mastercard.png" alt="Mastercard"
-                            id="methods-payment"></a>
+                        <img class="col-6" src="/assets/img/payment methods/mastercard.png" alt="Mastercard"
+                            id="methodsPayment"></a>
 
                         <!-- metodo 03 -->
-                        <img class="col-6" src="/img/payment methods/visa.png" alt="Visa" id="methods-payment"></a>
+                        <img class="col-6" src="/assets/img/payment methods/visa.png" alt="Visa" id="methodsPayment"></a>
 
                         <!-- metodo 04 -->
-                        <img class="col-6" src="/img/payment methods/hipercard.png" alt="Hipercard"
-                            id="methods-payment"></a>
+                        <img class="col-6" src="/assets/img/payment methods/hipercard.png" alt="Hipercard"
+                            id="methodsPayment"></a>
 
                         <!-- metodo 05 -->
-                        <img class="col-6" src="/img/payment methods/pix.png" alt="Pix" id="methods-payment"></a>
+                        <img class="col-6" src="/assets/img/payment methods/pix.png" alt="Pix" id="methodsPayment"></a>
                     </div>
                 </div>
 
-                <!-- Recent Trips -->
-                <div class="col-lg-4 m-0 p-0">
+                <div class="col-lg-4 m-0 p-0"><!-- Recent Trips -->
                     <h5>Viagens Recentes</h5>
 
                     <div class="row m-0 p-0">
                         <!-- card-recent-trip 01 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27138570412/">
                             <img class="shadow" src="https://live.staticflickr.com/7365/27138570412_d25002a5c9_q.jpg"
-                                alt="Rio De Janeiro" id="footerCard">
+                                alt="Rio De Janeiro" id="recentTrip">
                         </a>
 
                         <!-- card-recent-trip 02 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/28760131762/">
                             <img class="shadow" src="https://live.staticflickr.com/8688/28760131762_e4a64b20c4_q.jpg"
-                                alt="Buda" id="footerCard">
+                                alt="Buda" id="recentTrip">
                         </a>
 
                         <!-- card-recent-trip 03 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27308262031/">
                             <img class="shadow" src="https://live.staticflickr.com/7519/27308262031_a6ebf0572e_q.jpg"
-                                alt="Pinguins" id="footerCard">
+                                alt="Pinguins" id="recentTrip">
                         </a>
 
                         <!-- card-recent-trip 05 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27287965356/">
                             <img class="shadow" src="https://live.staticflickr.com/7160/27287965356_60355f51d7_q.jpg"
-                                alt="Singapura" id="footerCard">
+                                alt="Singapura" id="recentTrip">
                         </a>
 
                         <!-- card-recent-trip 05 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/26520497604/">
                             <img class="shadow" src="https://live.staticflickr.com/7543/26520497604_1df03a02bc_q.jpg"
-                                alt="Paris" id="footerCard">
+                                alt="Paris" id="recentTrip">
                         </a>
 
                         <!-- card-recent-trip 06 -->
-                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 m-0 zoom" target="_blank"
+                        <a class="col-4 col-sm-3 col-md-3 col-lg-4 g-1 m-0 p-0" target="_blank"
                             href="https://www.flickr.com/photos/artiephotography/27012097142/">
                             <img class="shadow" src="https://live.staticflickr.com/7502/27012097142_f1511b67bc_q.jpg"
-                                alt="The Great Gate" id="footerCard">
+                                alt="The Great Gate" id="recentTrip">
                         </a>
                     </div>
                 </div>
-
-                <!-- Footer Menu-->
-                <div class="mt-3 small">
+                
+                <div class="mt-3 small"><!-- Footer Menu-->
                     <ul class="nav footerNavbar">
-                        <!-- Home -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/html/home.html">Home</a>
+
+                        <li class="nav-item"><!-- About -->
+                            <a class="nav-link active" aria-current="page" href="/assets/html/about.html">Sobre</a>
                         </li>
 
-                        <!-- Destinos -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/destinations.html">Destinos</a>
+                        <li class="nav-item"><!-- Cadastre -->
+                            <a class="nav-link" href="/assets/html/cadastre.html">Cadastro</a>
                         </li>
 
-                        <!-- Promoções -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/promotions.html">Promoções</a>
+                        <li class="nav-item"> <!-- Contact us -->
+                            <a class="nav-link" href="/assets/html/contact.html">Contato</a>
                         </li>
 
-                        <!-- Contato -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/html/contact.html">Contatos</a>
+                        <li class="nav-item"><!-- FAQ -->
+                            <a class="nav-link" href="/assets/html/faq.html">FAQ</a>
                         </li>
-
-                        <!-- Item desativado -->
-                        <!-- <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Outro ITEM</a>
-                    </li> -->
                     </ul>
 
-                    <!-- Copyright -->
-                    <p class="m-0 small footerCopyright">
-                        Copyright &copy; 2023 <strong>Partiu™</strong> Agência de Viagens ⇆ Todos direitos
-                        reservados.
+                    <p class="m-0 small footerCopyright"><!-- Copyright -->
+                        Copyright &copy; 2023 <strong>Partiu™&nbsp;</strong>Agência de Viagens
+                        <i class="bi bi-arrow-left-right"></i> Todos direitos reservados.
                     </p>
                 </div>
             </div>

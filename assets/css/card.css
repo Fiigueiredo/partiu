@@ -62,7 +62,7 @@
 
 .content div {
     transform-style: preserve-3d;
-    background: var(--teste);
+    background: var(--gradientPromotion);
     transform: translateZ(100px);
     padding: 20px;
 }

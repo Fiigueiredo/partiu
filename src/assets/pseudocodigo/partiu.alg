@@ -11,10 +11,9 @@ Const
 
 Var
 
-   name              :vetor [1..maximoCad] de caracter
-   destination       :vetor [1..maximoCad] de caracter
+   name, destination :vetor [1..maximoCad] de caracter
    user              :caracter   //usuário da plataforma
-   i, menu, n        :inteiro
+   i, menu, n        :inteiro    //contadores, menu de opções
 
 Inicio
 
@@ -22,21 +21,17 @@ mudaCor("amarelo","frente")
 limpatela
 
 escreval("Olá, seja muito bem vindo(a) a")
-escreval("Partiu™, Agencia de viagens que mais cresce no Brasil")
+escreval("Partiu™, Agencia de viagens que mais cresce no Brasil!")
+escreval("Eu sou a Tutti, sua assistente virtual aqui na Partiu™.")
 escreval("")
 
-escreval("Eu sou a 'Tutti', sua assistente virtual aqui na Partiu™!")
-escreva("Não nos conhecemos, então...")
+escreva("Não nos conhecemos, então... ")
 escreva("Qual seu nome? ")
 leia(user)
 
 limpatela
 escreval("Prazer ",user,", é muito bom te conhecer!")
-escreval("Desculpe se houve uma mudança na sua tela, precisarei limpar sua tela sempre para que fique algo visual bacana pra você e não muito poluído como agora.")
-escreval("Entretanto, não precisa se preocupar pois nenhuma alteração sem seu concentimento será realizada.")
-
-escreval("")
-escreval("Oque você deseja fazer hoje ",user,"?")
+escreval("Então, abaixo estão suas opções, basta selecionar entre;")
 
 repita
    escreval("")
@@ -50,7 +45,7 @@ repita
 
    caso 1
       limpatela
-      escreval(user, ", escolha agora uma das opções, sendo: ")
+      escreval("Então ",user,", escolha agora uma das opções, sendo;")
       repita
          escreval("")
          escreval("[1] - Cadastrar Cliente")
@@ -69,18 +64,16 @@ repita
             limpatela
             escreval("Muito bem ",user,", vamos começar!")
 
-            para i de 1 ate n faca
-               escreva("Digite o nome do ",i,"º cliente: ")
+            para i de 1 ate maximoCad faca
+               escreva("Digite o nome do",i,"º cliente: ")
                leia(name[i])
 
                escreva("Digite o destino de ",name[i],": ")
                leia(destination[i])
             fimpara
 
-
          caso 2
             limpatela
-
             para i de 1 ate maximoCad faca
                escreva("Digite o destino do cliente: ")
                leia(destination[i])
@@ -89,7 +82,6 @@ repita
 
          caso 3
             limpatela
-
             para i de 1 ate maximoCad faca
                escreval(i,"° nome: ",name[i],".")
             fimpara
@@ -97,7 +89,6 @@ repita
 
          caso 4
             limpatela
-
             para i de 1 ate maximoCad faca
                escreval(i,"° destino: ",destination[i],".")
             fimpara
@@ -109,9 +100,11 @@ repita
 
 
          outrocaso
-            escreval("Ih, essa opção é inválida, tente novamente...")
-
-
+            limpatela
+            escreval("Ih, essa opção eu não conheço ou não é válida.")
+            escreval("Voce pode tentar novamente digitando;")
+            
+            
          fimescolha
       ate menu = 0
 
@@ -122,8 +115,10 @@ repita
 
 
    outrocaso
-      escreval("Opção inválida, tente novamente...")
-
+      limpatela
+      escreval("Ih, essa opção eu não conheço ou não é válida.")
+      escreval("Voce pode tentar novamente digitando (1 ou 0);")
+      
 
    fimescolha
 ate menu = 0

@@ -25,7 +25,7 @@
 
 ## Technologies
 
-Nesta atividade, vamos usar os conceitos de algoritmos em pseudocódigo (Resolução de problemas usando portugol), HTML <img width="20px" src="src/assets/icons/html.png">, CSS <img width="16px" src="src/assets/icons/css.png"> e BOOTSTRAP <img width="20px" src="src/assets/icons/icons/bootstrap.png"> para a construção de um modelo de <strong>agência de viagens</strong>.
+Nesta atividade, vamos usar os conceitos de algoritmos em pseudocódigo (Resolução de problemas usando portugol), HTML <img width="20px" src="src/assets/icons/html.png">, CSS <img width="16px" src="src/assets/icons/css.png"> e BOOTSTRAP <img width="20px" src="src/assets/icons/bootstrap.png"> para a construção de um modelo de <strong>agência de viagens</strong>.
 
 - <em>Usando linguagem Pseudocódigo</em>:  <img width="15px" src="src/assets/icons/portugol.png"><br>
 Usando conceitos de programação estruturada, crie em pseudocódigo um 'menu' para simular um cadastro para uma agência de viagens com as seguintes funções:</div>

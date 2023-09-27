@@ -36,6 +36,9 @@
     --color-emphasis: #FBCC56;
     --color-emphasis-rgb: 251, 204, 86;
 
+    --black: black;
+    --black-rgb: 0, 0, 0;
+
     --text-red: var(--color-red);
     --text-blue: var(--color-blue);
     --text-light: var(--color-light);
@@ -81,17 +84,13 @@
             #221133,
             var(--bg-dark));
 
-    /*     --gradient-default: linear-gradient(220deg,
+    --gradient-default: linear-gradient(220deg,
             var(--bg-dark),
-            var(--bg-emphasis)); */
+            var(--bg-emphasis));
 
-    --gradient: linear-gradient(45deg,
+    --gradient-emphasis: linear-gradient(45deg,
             var(--bg-emphasis),
             var(--bg-dark));
-
-    --gradient-emphasis: linear-gradient(270deg,
-            var(--bg-dark)50%,
-            var(--bg-emphasis)90%);
 
     --gradient-emphasis-rgba: linear-gradient(270deg,
             rgba(var(--bg-dark-rgb), .9) 50%,
@@ -101,26 +100,14 @@
 *,
 ::after,
 ::before {
-    font-family: var(--font-family-default);
-    font-size: var(--font-size-default);
-    font-weight: var(--font-weight-default);
-    line-height: var(--font-line-default);
-    color: var(--text-default);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: var(--bg-dark);
-    /*     background-image: var(--);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent */
-}
-
 .promo-bar {
     background-color: var(--bg-emphasis);
-    color: var(--color-dark);
+    color: var(--text-dark);
     padding: 0.1rem;
     text-align: center;
 }
@@ -237,8 +224,11 @@ section {
 }
 
 footer {
-    /* background-image: var(--gradient); */
-    background-color: black;
+    /* background-image: var(--gradient-dark); */
+    background-color: rgba(var(--black-rgb), 0.8);
+    display: block;
+    width: 100vh;
+    z-index: 1;
 }
 
 #recent-trip {

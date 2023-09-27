@@ -1,16 +1,17 @@
+<p >
+"Todos tem seu par, junte-se a nós e . . ."<br/>
+</p>
+
 <h1 align="center">
-<img align="center" src="src/assets/brand identity/tm-brand02.png" alt="Partiu&trade; logo">
+<img src="src/assets/brand identity/tm-brand02.png" alt="Partiu™ logo">
 </h1>
 
 <p align="center">
-"Todos tem seu <strong>par</strong>, junte-se a nós e <strong>partiu</strong>"<br/>
-</p>
-
-<p align="center">
-[About](#about) &nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
-[Technologies](#technologies) &nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
-[Screenshots](#screenshots) &nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
-[Deploy](#deploy)
+  <a href="#about"> About </a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#technologies"> Tech </a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#screenshots"> Screenshots </a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#deploy"> Deploy </a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#code-of-conduct"> Code of Conduct </a>
 </p>
 
 <br>
@@ -23,7 +24,7 @@ This repository is where I develop the [Partiu&trade;](https://partiu-viagens.ve
 
 # About
 <p align="center">
-  <img alt="devHOME™ in use on multiple platforms" src="/src/assets/mockup/mockup-removebg.png">
+  <img src="src/assets/mockup/mockup-removebg.png" alt="devHOME™ in use on multiple platforms">
 </p>
 
 <p>
@@ -59,7 +60,9 @@ In this activity, I am using concepts of algorithms in pseudocode (Troubleshooti
 
 # Screenshots
 
-<img width="500px" src="src/assets/mockup/mockup-using.png" alt="User accessing our destinations page">
+<p align="center">
+  <img width="" src="src/assets/mockup/mockup-using.png" alt="User accessing our destinations page">
+</p>
 
 <br>
 
@@ -85,7 +88,7 @@ license.
 
 ------------
 
-<p align="center"><img width="25rem" src="/src/assets/logo/colored-logo.png" alt="Partiu™ logo"> Developed by Levi Figueiredo &nbsp;&#124&nbsp; Recode Pro 2023 <img width="25rem" src="/src/assets/logo/colored-logo.png" alt="Partiu™ logo"></p>
+<p align="center"> Developed by Levi Figueiredo &nbsp;&#124&nbsp; Recode Pro 2023 <img width="14rem" src="/src/assets/logo/colored-logo.png" alt="Partiu™ logo"><img width="25rem" src="/src/assets/logo/colored-logo.png" alt="Partiu™ logo"></p>
 
 <!--
 &#x2610; Desmarcado

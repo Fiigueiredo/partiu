@@ -1,0 +1,27 @@
+@import url(style.css);
+
+.maps {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .maps {
+    filter: drop-shadow(7px 7px 12px var(--color-emphasis));
+  }
+
+  #address01 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-light) !important;
+    text-align: center;
+  }
+  
+  #address02 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text-light) !important;
+    text-align: center;
+  }

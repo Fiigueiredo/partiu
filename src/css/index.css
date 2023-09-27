@@ -1,0 +1,20 @@
+@import url(style.css);
+
+body {
+  /*  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg); */
+  /*  background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyTx?ver=75ec); */
+  background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11N2LZ.img);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* 
+#jarallax-container-0 {
+  clip: rect(0 759px 800px 0);
+  clip: rect(0, 759px, 800px, 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+ */

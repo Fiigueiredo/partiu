@@ -1,568 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-@import url(https://db.onlinewebfonts.com/c/b1030670fe2c54b8736af23bcf6bd166?family=Gotham+HTF+Light);
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url(card.css);
 
-:root {
-  --fontPadrão: "Gotham HTF Light", system-ui, -apple-system;
-  --fontSpecial: 'Bebas Neue', sans-serif;
-  --colorText: #DEE2E6BF;
-
-  /* CORES DA LOGO */
-  --colorLogo0: #070750;
-  --colorLogo1: #238ED6;
-  --colorLogo2: #79BD8F;
-  --colorLogo3: #FBCC54;
-  --colorLogo4: #ED3E44;
-  --colorButton0: #FF4A52;
-  --colorButton1: #1ec6b6;
-  --backgroundColor0: rgba(0, 0, 0, 0.4);
-  --backgroundColor1: #212529;
-  --backgroundColor2: #2B3035;
-  --backgroundColor3: #7a7a7a;
-  --backgroundColor4: #a2a2a2;
-
-  --gradientLogo: linear-gradient(to right,
-      rgba(35, 142, 214),
-      rgba(121, 189, 143),
-      rgba(251, 204, 84));
-
-  --gradientBackground: linear-gradient(45deg,
-      black,
-      #221133c2);
-
-  --gradientPromotion: linear-gradient(45deg,
-      #3434bc,
-      #cc7cf0);
+.esse {
+    border: 1px solid red
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+:root,
+[data-bs-theme=dark] {
+    --font-default: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    --font-emphasis: "Poppins", sans-serif;
+
+    --font-family-default: var(--font-default);
+    --font-size-default: 2.1vh;
+    --font-weight-default: 400;
+    --font-line-default: 1.5;
+    --font-letter-spacing-default: 0.5vh;
+
+    --font-family-emphasis: var(--font-emphasis);
+    --font-size-emphasis: 5vh;
+    --font-weight-emphasis: 700;
+    --font-line-emphasis: 1.5;
+    --font-letter-spacing-emphasis: 0.9vh;
+
+    color-scheme: dark;
+    --color-red: #FF4A52;
+    --color-red-rgb: 255, 74, 82;
+    --color-blue: #1EC6B6;
+    --color-blue-rgb: 30, 198, 182;
+    --color-light: #F8F9FA;
+    --color-light-rgb: 248, 249, 250;
+    --color-dark: #212529;
+    --color-dark-rgb: 33, 37, 41;
+    --color-default: #DEE2E6;
+    --color-default-rgb: 222, 226, 230;
+    --color-emphasis: #FBCC56;
+    --color-emphasis-rgb: 251, 204, 86;
+
+    --text-red: var(--color-red);
+    --text-blue: var(--color-blue);
+    --text-light: var(--color-light);
+    --text-dark: var(--color-dark);
+    --text-default: var(--color-default);
+    --text-emphasis: var(--color-emphasis);
+    --hover-red: var(--color-red);
+    --hover-blue: var(--color-blue);
+    --hover-light: var(--color-light);
+    --hover-dark: var(--color-dark);
+    --hover-default: var(--color-default);
+    --hover-emphasis: var(--color-emphasis);
+    --icon-red: var(--color-red);
+    --icon-blue: var(--color-blue);
+    --icon-light: var(--color-light);
+    --icon-dark: var(--color-dark);
+    --icon-default: var(--color-default);
+    --icon-emphasis: var(--color-emphasis);
+    --btn-red: var(--color-red);
+    --btn-blue: var(--color-blue);
+    --btn-light: var(--color-light);
+    --btn-dark: var(--color-dark);
+    --btn-default: var(--color-default);
+    --btn-emphasis: var(--color-emphasis);
+    --bg-red: var(--color-red);
+    --bg-red-rgb: var(--color-red-rgb);
+    --bg-blue: var(--color-blue);
+    --bg-blue-rgb: var(--color-blue-rgb);
+    --bg-light: var(--color-light);
+    --bg-light-rgb: var(--color-light-rgb);
+    --bg-dark: var(--color-dark);
+    --bg-dark-rgb: var(--color-dark-rgb);
+    --bg-default: var(--color-default);
+    --bg-default-rgb: var(--color-default-rgb);
+    --bg-emphasis: var(--color-emphasis);
+    --bg-emphasis-rgb: var(--color-emphasis-rgb);
+
+    --radial-gradient: radial-gradient(circle,
+            rgba(var(--bg-emphasis-rgb), .9) 10%,
+            rgba(var(--bg-dark-rgb), .9) 80%);
+
+    --gradient: linear-gradient(45deg,
+            #221133,
+            var(--bg-dark));
+
+    /*     --gradient-default: linear-gradient(220deg,
+            var(--bg-dark),
+            var(--bg-emphasis)); */
+
+    --gradient: linear-gradient(45deg,
+            var(--bg-emphasis),
+            var(--bg-dark));
+
+    --gradient-emphasis: linear-gradient(270deg,
+            var(--bg-dark)50%,
+            var(--bg-emphasis)90%);
+
+    --gradient-emphasis-rgba: linear-gradient(270deg,
+            rgba(var(--bg-dark-rgb), .9) 50%,
+            rgba(var(--bg-emphasis-rgb), .9) 90%);
+}
+
+*,
+::after,
+::before {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-default);
+    line-height: var(--font-line-default);
+    color: var(--text-default);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  background-image: var(--);
-  font-family: var(--);
+    background-color: var(--bg-dark);
+    /*     background-image: var(--);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent */
 }
 
-/* Navbar */
-/* .bd-navbar {
-  background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  padding: .75rem 0;
-} */
+.promo-bar {
+    background-color: var(--bg-emphasis);
+    color: var(--color-dark);
+    padding: 0.1rem;
+    text-align: center;
+}
 
-/* .bd-navbar {
-  background-image: linear-gradient(to bottom,
-  var(--color-special),
-  #0093A2AA);
-} */
+.navbar {
+    z-index: 1000;
+}
 
 .bd-navbar {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    background-image: var(--gradient-emphasis-rgba);
+    background-color: transparent;
+    box-shadow: 0 0.5rem 1rem var(--bg-dark), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    padding: .1rem 0;
 }
 
-#navbarLogo {
-  max-width: 65px;
-  filter: drop-shadow(20px 10px 5px var(--));
+.navbar-nav,
+.nav-item,
+.dropdown {
+    --bs-nav-link-font-weight: var(--font-weight-default);
+    --bs-nav-link-color: var(--text-light);
+    --bs-nav-link-hover-color: var(--hover-emphasis);
 }
 
-#togglerLogo {
-  max-width: 30px;
+.dropdown-menu:hover {
+    filter: drop-shadow(7px 7px 6.6px var(--bg-emphasis));
 }
 
-.nav-link {
-  color: #fff;
-  font-size: 0.9em;
-  font-weight: 700;
+#logo {
+    max-width: 6vmin;
+    filter: drop-shadow(20px 10px 5px var(--));
 }
 
-.togglerBackground {
-  background-color: var(--backgroundColor3);
+#icon-logo {
+    max-width: 6vmin;
+    filter: drop-shadow(3px 3px 3px var(--color-emphasis));
 }
 
-.dropdownBackground {
-  background-color: var(--colorLogo3);
+#brand {
+    max-width: 12vmin;
 }
 
-span {
-  font-family: var(--fontSpecial);
-  background-image: var(--gradientLogo);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: 700;
+a:hover {
+    color: var(--text-emphasis);
+    text-decoration: none;
 }
 
-i {
-  color: var(--colorLogo3);
-}
-
-hr {
-  border-image: var(--gradientLogo) 1;
-}
-
-.containerAlign {
-  justify-content: center;
-}
-
-.styleHome {
-  /*  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg); */
-  /*  background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyTx?ver=75ec); */
-  background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11N2LZ.img);
-  background-position: center;
-  background-size: cover;
-  color: var(--logo01);
-}
-
-gradient {
-  background-image: var(--gradientLogo);
-  font-family: var(--fontSpecial);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+hr,
+.border-bottom {
+    border-image: var(--radial-gradient) 1;
 }
 
 strong {
-  background-image: var(--gradientLogo);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: 700;
+    color: var(--text-emphasis);
 }
 
-
-
-
-
-
-
-
-.contactMaps {
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
+.bi-airplane-fill,
+.bi-wifi,
+.bi-pin,
+.bi-dot,
+.bi-h-circle-fill,
+.bi-cone-striped {
+    color: var(--icon-emphasis);
 }
 
-.contactMaps {
-  filter: drop-shadow(7px 7px 15px var(--colorLogo3));
+.test {
+    background-image: var(--gradient);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
-a,
-li:hover {
-  text-decoration: none;
+section {
+    padding: 2rem;
+    border: 4px solid var(--bg-emphasis);
+    border-image: var(--gradient) 1;
 }
 
-.backgroundToggler {
-  background-color: var(--backgroundColor3);
+.title-emphasis {
+    font-family: var(--font-family-emphasis);
+    font-size: var(--font-size-emphasis);
+    font-weight: var(--font-weight-emphasis);
+    color: var(--text-emphasis);
 }
 
-.backgroundDropdown {
-  background-color: var(--colorLogo3);
+.text-emphasis {
+    font-family: var(--font-emphasis);
+    font-weight: var(--font-weight-emphasis);
+    color: var(--text-emphasis);
 }
 
-.shadow:hover {
-  filter: drop-shadow(7px 7px 5px var(--backgroundColor0));
+.destination-title {
+    font-family: var(--font-family-emphasis);
+    font-weight: var(--font-weight-emphasis);
+    letter-spacing: var(--font-letter-spacing-default);
+    color: var(--text-emphasis);
 }
 
-.zoom {
-  transition: transform 0.5s;
+.btn-danger {
+    --bs-btn-color: var(--btn-light);
+    --bs-btn-bg: var(--btn-red);
+    --bs-btn-border-color: var(--btn-red);
+    --bs-btn-hover-color: var(--hover-dark);
+    --bs-btn-hover-bg: var(--hover-blue);
+    --bs-btn-hover-border-color: var(--hover-blue);
+    --bs-btn-active-color: var(--btn-dark);
+    --bs-btn-active-bg: var(--bg-emphasis);
+    --bs-btn-active-border-color: var(--btn-emphasis);
+    --bs-btn-hover-shadow: inset 0 3px 5px var(--bg-emphasis);
+    transition: 0.3s;
 }
 
-.zoom:hover {
-  transform: scale(1.1);
+.btn-danger:hover {
+    filter: drop-shadow(7px 7px 6.6px var(--bg-dark));
 }
 
-.search-button {
-  background-color: var(--colorButton0);
-  color: white;
-  border-radius: 5px;
-  transition: 0.3s;
-  border: none;
-}
-
-.search-button:hover {
-  background-color: var(--colorButton1);
-  color: black;
-}
-
-.homeSearch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40rem;
-}
-
-.otherTitle,
-.title {
-  color: #fff;
-  text-align: center;
-}
-
-.titleContainer {
-  color: #fff;
-  text-align: center;
-  font-size: 1.8vmin;
-  padding: 20px;
-}
-
-.textContainer,
-.subtitle {
-  color: #fff;
-  text-align: center;
-  font-size: 1.8vmin;
-}
-
-/* .carousel-inner {
-  height: 90vh;
-} */
-
-.carousel-caption {
-  top: 40%;
-  color: #fff;
-}
-
-.carousel-caption h5 {
-  font-family: var(--fontSpecial);
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-
-.carousel-caption p {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.carousel-indicators .active {
-  background-color: var(--colorLogo3);
-}
-
-form {
-  color: #fff;
-}
-
-select,
-input {
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-}
-
-/* Footer */
 footer {
-  background-color: var(--backgroundColor1);
-  color: var(--colorText);
+    /* background-image: var(--gradient); */
+    background-color: black;
 }
 
-#footerLogo {
-  max-width: 50px;
-  margin: 10px;
-  filter: drop-shadow(5px 6px 5px var(--backgroundColor0));
+#recent-trip {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 2vh;
 }
 
-#methodsPayment {
-  /* formas de pagamento */
-  max-width: 25%;
-}
-
-#recentTrip {
-  /* viagens recentes */
-  max-width: 90%;
-  border-radius: 5px;
-  margin-bottom: 14px;
-}
-
-#recentTrip:hover {
-  /* viagens recentes */
-  filter: drop-shadow(0px 3px 5px var(--colorLogo3));
-}
-
-.footerNavbar,
-.footerCopyright {
-  text-align: center;
-  justify-content: center;
-}
-
-.imgDestino {
-  background-image: url(/img/outras/map01-editada.png);
-  background-position: right;
-  margin: 0px;
-  padding: 0px;
-}
-
-#tropicalTreasures {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
-  background-position: center;
-  height: 100%
-}
-
-.destinationTitle {
-  font-family: var(--fontSpecial);
-  background-color: var(--gradientBackground);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.destinationCard {
-  height: 18rem;
-  margin: 12px;
-}
-
-#contactOverlay01 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377.jpg);
-  background-position: center;
-  background-size: cover;
-  color: rgb(255, 255, 255) !important;
-  text-align: center;
-  font-size: 15px;
-  padding: 100px 0px;
-}
-
-#contactOverlay02 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1.jpg);
-  background-position: center;
-  background-size: cover;
-  color: rgb(255, 255, 255) !important;
-  text-align: center;
-  font-size: 15px;
-  padding: 100px 0px;
-}
-
-#tourImage01 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage02 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg);
-  background-position: center bottom;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage03 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg);
-  background-position: center bottom;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage04 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage05 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/venice-WBEUROCITIES16-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage06 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-10-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage07 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/39267772-prague-wallpapers-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage08 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-96420-700x466.jpeg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage09 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage10 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg;);
-  background-position: center right;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage11 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage12 {
-  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/santorini_1-700x466.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage13 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage14 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Los-Cabos_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage15 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Riviera-Maya_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage16 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Aruba_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage17 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Jamaica_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#tourImage18 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/St.-Lucia_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard01 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Mexico_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard02 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/hunts-mesa-monument-valley-arizona_1745x1165.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard03 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Canada_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard04 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Africa_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard05 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Antarctica_Iceberg_838x557_WIDGET%20A.png);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard06 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Asia_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard07 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Australia_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard08 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Caribbean_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard09 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/central-america_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard10 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Europe_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard11 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/indian%20ocean-drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard12 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/Middle-East_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard13 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/North-America_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard14 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/South%20America_Iguazu%20Falls_838x557_WIDGET%20A.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
-}
-
-#vacationCard15 {
-  background-image: url(https://www.libertytravel.com/sites/default/files/South-Pacific_drilldown.jpg);
-  background-position: center;
-  border-radius: 5px;
-  height: 100%;
+#recent-trip:hover {
+    filter: drop-shadow(0px 3px 5px var(--hover-emphasis));
 }

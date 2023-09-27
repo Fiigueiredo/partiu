@@ -1,0 +1,398 @@
+@import url(style.css);
+
+.carousel {
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+/* .carousel-indicators {
+    position: absolute;
+    margin-right: 15%;
+    margin-bottom: 0.5rem;
+    margin-left: 15%;
+} */
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: var(--bg-light);
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease
+}
+
+.carousel-indicators .active {
+    background-color: var(--bg-emphasis);
+    opacity: 1;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100vw;
+    overflow: hidden
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100vw;
+    height: 70vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center
+}
+
+#slide1 {
+    background-image: url(/src/assets/img/slide01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide2 {
+    background-image: url(/src/assets/img/slide02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#slide3 {
+    background-image: url(/src/assets/img/slide03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+rect {
+    fill: rgba(var(--bg-emphasis-rgb), .230);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9vh;
+    padding: 0;
+    color: var(--btn-light);
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 4vw;
+    height: 4vh;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%
+}
+
+.card {
+    height: 18rem;
+    margin: 12px;
+}
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+#tourImage01 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage02 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-1-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage03 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage04 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-24377-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage05 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/venice-WBEUROCITIES16-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage06 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-10-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage07 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/39267772-prague-wallpapers-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage08 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-96420-700x466.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage09 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-115070-700x466.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage10 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg;);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage11 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage12 {
+    background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/santorini_1-700x466.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage13 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Cancun_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage14 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Los-Cabos_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage15 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Riviera-Maya_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage16 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Aruba_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage17 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Jamaica_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#tourImage18 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/St.-Lucia_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures01 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Mexico_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures02 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/hunts-mesa-monument-valley-arizona_1745x1165.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures03 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Canada_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures04 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Africa_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures05 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Antarctica_Iceberg_838x557_WIDGET%20A.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures06 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Asia_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures07 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Australia_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures08 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Caribbean_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures09 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/central-america_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures10 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Europe_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures11 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/indian%20ocean-drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures12 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/Middle-East_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures13 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/North-America_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures14 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/South%20America_Iguazu%20Falls_838x557_WIDGET%20A.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#treasures15 {
+    background-image: url(https://www.libertytravel.com/sites/default/files/South-Pacific_drilldown.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+}

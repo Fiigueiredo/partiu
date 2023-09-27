@@ -1,12 +1,8 @@
 "Todos tem seu par, junte-se a nós e par~"
 
 "Já trabalhou demais, deixa com agente agora. Vá descansar!"
-
 "Só prepare as malas, que nós cuidaremos do seu descanso!"
-
 "Uma das descisões mais dificeis que você pode tomar, é pra onde vou viajar. Para responder isso, temos alguns pacotes"
-
-Os melhores destinos e viagens para o próximo ano
 
 ---------menu----------
 1- Home (Resumo empresa/Promoções atuais/Feedbacks)
@@ -17,26 +13,18 @@ Os melhores destinos e viagens para o próximo ano
 6- Contact us (Contato/localidades/maps)
 7- FAQ (Perguntas/Respostas)
 ---------------
-SOBRE
 
-Fundada em 1970, a RioTravel iniciou as suas atividades no Rio de Janeiro, sendo atualmente uma das mais tradicionais e sólidas agências do mercado nacional, aliando alto conhecimento profissional e elevada experiência institucional com modernas ferramentas tecnológicas.
-
-A RioTravel estabelece um modelo de negócios de permanente e efetiva parceria com seus clientes e fornecedores, visando sempre as melhores oportunidades, tendo como seus principais pilares a competência, eficiência, ética, transparência e integridade.
-
-A RioTravel tem forte atuação no mercado corporativo, através do segmento denominado CORPORATE, bem como na área de turismo de lazer, denominada EXPERIENCE e ainda na área de Reuniões, Incentivos, Conferências e Exposições, denominada MICE.
-
-Política de Segurança da Informação
-
-
-“Fornecer serviços de viagens e eventos corporativos com a segurança necessária e preservação dos dados dos interessados, em todas as transações efetuadas; por meio dos sistemas de tecnologia utilizados, equipes capacitadas e conscientizadas; atendendo aos requisitos dos interessados e legislações aplicáveis; e melhorando continuamente seu sistema de gestão da segurança da informação”.
-
-MISSÃO, VISÃO E VALORES
+About
+A Partiu™ é uma agência de viagens moderna e inovadora, comprometida em proporcionar experiências de viagem memoráveis e personalizadas para os seus clientes. Nosso objetivo é oferecer uma ampla gama de destinos e serviços de alta qualidade, tornando a realização dos sonhos de viagem de nossos clientes uma realidade.
 
 Missão:
-Proporcionar um serviço especializado e diferenciado no segmento de viagens corporativas, visando a total satisfação dos nossos clientes.
+Nossa missão é criar viagens inesquecíveis, superando as expectativas de nossos clientes por meio de um atendimento personalizado, roteiros exclusivos e parcerias com os melhores fornecedores de serviços de viagens. Queremos ser a primeira escolha quando se trata de planejar uma escapada perfeita, uma aventura emocionante ou uma jornada de descoberta.
 
 Visão:
-Ser uma agência referência no segmento de viagens corporativas, buscando na excelência nos serviços.
+Ser uma agência referência no segmento de viagens, buscando na excelência nos serviços.
 
 Valores:
-Ética, compromisso, transparência, foco no foco do cliente e responsabilidade social.
+Atendimento ao Cliente: Colocamos nossos clientes em primeiro lugar, ouvindo suas necessidades e desejos para criar experiências sob medida.
+Qualidade e Confiança: Mantemos altos padrões de qualidade em todos os nossos serviços e parcerias, garantindo que nossos clientes viajem com confiança.
+Inovação: Buscamos constantemente maneiras criativas de melhorar nossos serviços e oferecer soluções únicas de viagem.
+Sustentabilidade: Comprometemo-nos a promover o turismo sustentável e a minimizar o impacto ambiental de nossas atividades.

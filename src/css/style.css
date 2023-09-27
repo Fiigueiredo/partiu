@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+.esse {
+    border: 1px solid red
+}
+
 :root,
 [data-bs-theme=dark] {
     --font-default: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
     --font-emphasis: "Poppins", sans-serif;
 
     --font-family-default: var(--font-default);
-    --font-size-default: 2.1vh;
+    --font-size-default: 2.0vmin;
     --font-weight-default: 400;
     --font-line-default: 1.5;
     --font-letter-spacing-default: 0.5vh;
 
     --font-family-emphasis: var(--font-emphasis);
-    --font-size-emphasis: 5vh;
+    --font-size-emphasis: 5.0vmin;
     --font-weight-emphasis: 700;
     --font-line-emphasis: 1.5;
     --font-letter-spacing-emphasis: 0.9vh;
@@ -101,6 +105,9 @@
 *,
 ::after,
 ::before {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -186,6 +193,14 @@ section {
     font-size: var(--font-size-emphasis);
     font-weight: var(--font-weight-emphasis);
     color: var(--text-emphasis);
+}
+
+.subtitle-default {
+    font-family: var(--font-family-default);
+    font-size: calc(var(--font-size-default) + 0.4vh);
+    font-weight: var(--font-weight-default);
+    letter-spacing: calc(var(--font-letter-spacing-default) - 0.4vh);
+    color: var(--text-light);
 }
 
 .btn-danger {

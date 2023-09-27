@@ -4,11 +4,11 @@ body {
   /*  background-image: url(https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg); */
   /*  background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wyTx?ver=75ec); */
   background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA11N2LZ.img);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-attachment: fixed;
 }
 
 main{

@@ -34,7 +34,7 @@ This repository is where I develop the [Partiu&trade;](https://partiu-viagens.ve
 
 # Technologies
 
-Nesta atividade, estou usando conceitos de algoritmos em pseudocódigo (Resolução de problemas usando portugol), HTML <img width="20px" src="src/assets/icons/html.png">, CSS <img width="16px" src="src/assets/icons/css.png"> e BOOTSTRAP <img width="20px" src="src/assets/icons/bootstrap.png"> para a construção de um modelo de <strong>agência de viagens</strong>.
+In this activity, I am using concepts of algorithms in pseudocode (Troubleshooting using portugol), HTML <img width="20px" src="src/assets/icons/html.png">, CSS <img width="16px" src="src/assets/icons/css.png"> e BOOTSTRAP <img width="20px" src="src/assets/icons/bootstrap.png"> for the construction of a <strong>travel agency </strong>model.
 
 - <em>Using Pseudocode Language</em>:  <img width="15px" src="src/assets/icons/portugol.png">
   > Using structured programming concepts, create in pseudocode a 'menu' to simulate a registration for a travel agency with the following functions:
@@ -46,20 +46,20 @@ Nesta atividade, estou usando conceitos de algoritmos em pseudocódigo (Resoluç
   - Customer Inquiry;
   - Destination Query;
 
-- <em>Usando linguagem WEB</em>: <img width="50px" src="src/assets/icons/frontend.png">
+- <em>Using WEB language</em>: <img width="50px" src="src/assets/icons/frontend.png">
 
-  - &#x2611; Criar a página: Home;
-  - &#x2611; Criar a página: Destino;
-  - &#x2611; Criar a página: Promoções;
-  - &#x2611; Criar a página: Contato;
-  - &#x2611; As páginas devem ser responsivas ou adaptáveis;
-  - &#x2611; Faça as formatações de acordo com a paleta de cores escolhida;
+  - &#x2611; Create the page: Home;
+  - &#x2611; Create the page: Destination;
+  - &#x2611; Create the page: Promotions;
+  - &#x2611; Create the page: Contact;
+  - &#x2611; Pages must be responsive or adaptable;
+  - &#x2611; Make the formatting according to the chosen color palette;
 
 <br>
 
 # Screenshots
 
-<img width="500px" src="#" alt="no screenshots at the moment">
+<img width="500px" src="src/assets/mockup/mockup-using.png" alt="User accessing our destinations page">
 
 <br>
 

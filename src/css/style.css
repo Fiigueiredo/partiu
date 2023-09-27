@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.esse {
-    border: 1px solid red
-}
-
 :root,
 [data-bs-theme=dark] {
     --font-default: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
@@ -31,36 +27,39 @@
     --color-light-rgb: 248, 249, 250;
     --color-dark: #212529;
     --color-dark-rgb: 33, 37, 41;
+    --color-black: black;
+    --color-black-rgb: 0, 0, 0;
     --color-default: #DEE2E6;
     --color-default-rgb: 222, 226, 230;
     --color-emphasis: #FBCC56;
     --color-emphasis-rgb: 251, 204, 86;
 
-    --black: black;
-    --black-rgb: 0, 0, 0;
-
     --text-red: var(--color-red);
     --text-blue: var(--color-blue);
     --text-light: var(--color-light);
     --text-dark: var(--color-dark);
+    --text-black: var(--color-black);
     --text-default: var(--color-default);
     --text-emphasis: var(--color-emphasis);
     --hover-red: var(--color-red);
     --hover-blue: var(--color-blue);
     --hover-light: var(--color-light);
     --hover-dark: var(--color-dark);
+    --hover-black: var(--color-black);
     --hover-default: var(--color-default);
     --hover-emphasis: var(--color-emphasis);
     --icon-red: var(--color-red);
     --icon-blue: var(--color-blue);
     --icon-light: var(--color-light);
     --icon-dark: var(--color-dark);
+    --icon-black: var(--color-black);
     --icon-default: var(--color-default);
     --icon-emphasis: var(--color-emphasis);
     --btn-red: var(--color-red);
     --btn-blue: var(--color-blue);
     --btn-light: var(--color-light);
     --btn-dark: var(--color-dark);
+    --btn-black: var(--color-black);
     --btn-default: var(--color-default);
     --btn-emphasis: var(--color-emphasis);
     --bg-red: var(--color-red);
@@ -71,6 +70,8 @@
     --bg-light-rgb: var(--color-light-rgb);
     --bg-dark: var(--color-dark);
     --bg-dark-rgb: var(--color-dark-rgb);
+    --bg-black: var(--color-black);
+    --bg-black-rgb: var(--color-black-rgb);
     --bg-default: var(--color-default);
     --bg-default-rgb: var(--color-default-rgb);
     --bg-emphasis: var(--color-emphasis);
@@ -108,8 +109,6 @@
 .promo-bar {
     background-color: var(--bg-emphasis);
     color: var(--text-dark);
-    padding: 0.1rem;
-    text-align: center;
 }
 
 .navbar {
@@ -159,10 +158,6 @@ hr,
     border-image: var(--radial-gradient) 1;
 }
 
-strong {
-    color: var(--text-emphasis);
-}
-
 .bi-airplane-fill,
 .bi-wifi,
 .bi-pin,
@@ -170,13 +165,6 @@ strong {
 .bi-h-circle-fill,
 .bi-cone-striped {
     color: var(--icon-emphasis);
-}
-
-.test {
-    background-image: var(--gradient);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 
 section {
@@ -189,19 +177,14 @@ section {
     font-family: var(--font-family-emphasis);
     font-size: var(--font-size-emphasis);
     font-weight: var(--font-weight-emphasis);
+    letter-spacing: var(--font-letter-spacing-default);
     color: var(--text-emphasis);
 }
 
 .text-emphasis {
-    font-family: var(--font-emphasis);
-    font-weight: var(--font-weight-emphasis);
-    color: var(--text-emphasis);
-}
-
-.destination-title {
     font-family: var(--font-family-emphasis);
+    font-size: var(--font-size-emphasis);
     font-weight: var(--font-weight-emphasis);
-    letter-spacing: var(--font-letter-spacing-default);
     color: var(--text-emphasis);
 }
 
@@ -225,7 +208,7 @@ section {
 
 footer {
     /* background-image: var(--gradient-dark); */
-    background-color: rgba(var(--black-rgb), 0.8);
+    background-color: rgba(var(--bg-black-rgb), 0.8);
     display: block;
     width: 100vh;
     z-index: 1;
